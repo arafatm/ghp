@@ -13,8 +13,8 @@ github_username:  arafatm
 # Build settings
 markdown: kramdown
 highlighter: rouge
-input: GFM
 kramdown:
+  input: GFM
   toc_levels: 1..5
 plugins:
   - jekyll-feed
