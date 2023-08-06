@@ -31,9 +31,11 @@ jobs:
       - name: copy GHP configs
         run: | 
           if [[ -d "ghp" ]]; then 
-            if [[ -d ".github" ]]; them rm -rf .github; fi
-            find ghp -maxdepth 1 -mindepth 1 -print -exec cp -r {} . \; 
+            find ghp -maxdepth 1 -mindepth 1 -not -name ".git" -print -exec cp -rf {} . \; 
           fi
+      - uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
