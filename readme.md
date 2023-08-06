@@ -8,7 +8,7 @@ title: GH-Pages Template
 
 ## Math
 
-- `$` $`f_{w,b}(x) = wx + b`$ is equivalent to 
+- `$` $` f_{w,b}(x) = wx + b `$ is equivalent to 
 - `$` $f_{w,b}(x) = wx + b$ is equivalent to 
 - `$$` $$f_{w,b}(x) = wx + b$$ is equivalent to 
 asdf
