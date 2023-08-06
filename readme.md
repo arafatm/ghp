@@ -23,14 +23,15 @@ $$
 $$
 
 
-```math
+```
+$$
 \begin{aligned}
 \text{repeat until convergence \{} \\ 
   &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
   &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
 \}
 \end{aligned}
-
+$$
 ```
 
 | General Notation       | Python (if applicable) | Description                                                                                                   |
