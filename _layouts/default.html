@@ -12,12 +12,15 @@
   </head>
   <body>
     <ul>
-      <li>absolute_url {{ '/' | absolute_url }}
-      <li>relative_url {{ '/' " | relative_url }}
-      <li>site.url {{ site.url }}
-      <li>site.baseurl {{ site.baseurl }}
-      <li>page.title {{ page.title }}
-      <li>page.url {{ page.url}}
+      <li>css: {{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"</li>
+      <li>css: {{ '/style.css?v=' | append: site.github.build_revision | absolute_url }}"</li>
+      <li>css: {{ '/style.css?v=' | append: site.github.build_revision | relative_url }}"</li>
+      <li>absolute_url {{ '/' | absolute_url }}</li>
+      <li>relative_url {{ '/' " | relative_url }}</li>
+      <li>site.url {{ site.url }}</li>
+      <li>site.baseurl {{ site.baseurl }}</li>
+      <li>page.title {{ page.title }}</li>
+      <li>page.url {{ page.url}}</li>
     </ul>
     <div class="wrapper">
       {% comment %}
