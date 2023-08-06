@@ -11,8 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
-    <div>Absolute URL: {{ absolute_url }}</div>
-    <div>Relative URL: {{ relative_url }}</div>
+    <ul>
+      <li>site.url {{ site.url }}
+      <li>page.title {{ page.title }}
+      <li>page.url {{ page.url}}
+    </ul>
     <div class="wrapper">
       {% comment %}
       <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
