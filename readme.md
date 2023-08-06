@@ -2,6 +2,10 @@
 title: GH-Pages Template 
 ---
 
+> Quote
+
+    Block
+
 ## Math
 
 - `$` $`f_{w,b}(x) = wx + b`$ is equivalent to 
@@ -18,14 +22,6 @@ $$
 \end{aligned}
 $$
 
-    $$
-    \begin{aligned}
-    \text{repeat until convergence \{} \\ 
-      &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
-      &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
-    \}
-    \end{aligned}
-    $$
 
 ```math
 \begin{aligned}
