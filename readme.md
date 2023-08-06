@@ -1,4 +1,6 @@
-# GH-Pages Template 
+---
+title: GH-Pages Template 
+---
 
 ## Testing
 
