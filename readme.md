@@ -1,7 +1,3 @@
----
-layout: debug
----
-
 # Title
 
 ## Testing
