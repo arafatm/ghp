@@ -1,3 +1,5 @@
+## Testing
+
 Copy this folder and run `ggit_arafatm; ggit_pages`
 
 Links
@@ -9,3 +11,23 @@ Test Code
 i = 56;
 puts "test #{i}"
 ```
+
+- $`f_{w,b}(x) = wx + b`$ is equivalent to 
+- $f_{w,b}(x) = wx + b$ is equivalent to 
+
+```math
+\begin{aligned}
+\text{repeat until convergence \{} \\ 
+  &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
+  &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
+\}
+\end{aligned}
+
+```
+
+| General Notation       | Python (if applicable) | Description                                                                                                   |
+| :--                    | :--                    | :--                                                                                                           |
+| $`w`$                  | `w`                    | parameter: weight                                                                                             |
+| $`b`$                  | `b`                    | parameter: bias                                                                                               |
+| $`f_{w,b}(x^{(i)})`$   | `f_wb`                 | The result of the model evaluation at $`x^{(i)}`$ parameterized by $`w,b`$: $`f_{w,b}(x^{(i)}) = wx^{(i)}+b`$ |
+
