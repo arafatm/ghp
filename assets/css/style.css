@@ -4,7 +4,7 @@
 
 @import "https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css";
 @import "https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
-@import './rouge.monokai.css';
+@import '/rouge.monokai.css';
 
 html { background-color: darkgrey; }
 body { font: 16px/20px sans-serif; max-width: 1530px; background-color: white; margin: 0em auto; padding: 0.5em; border: 2px solid black; }
@@ -23,7 +23,7 @@ h1 + ul > li { display: inline; padding: 0 1em; }
 
 a > img {border: 2px solid blue;}
 img { margin: 0; padding: 1px; width: 24%; border: 1px solid black }
-img.emoji { width: 1.5em; height: 1.5em; border: 1px solid gray; border-radius: 1em; padding: 0.4em; background-color: salmon;
+img.emoji { width: 3.5em; height: 3.5em; border: 1px solid gray; border-radius: 1em; padding: 0.4em; background-color: salmon;
 
 @media (max-width: 1200px) { img { width: 32%; } }
 @media (max-width: 800px) { img { width: 48%; } }
