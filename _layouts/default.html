@@ -12,8 +12,8 @@
   </head>
   <body>
     <ul>
-      <li>css: {{ '/style.css?v=' | append: site.github.build_revision | absolute_url }}"</li>
-      <li>css: {{ '/style.css?v=' | append: site.github.build_revision | relative_url }}"</li>
+      <li>css: {{ '/style.css?v=' | absolute_url }}"</li>
+      <li>css: {{ '/style.css?v=' | relative_url }}"</li>
       <li>absolute_url {{ '/' | absolute_url }}</li>
       <li>relative_url {{ '/' " | relative_url }}</li>
       <li>site.url {{ site.url }}</li>
