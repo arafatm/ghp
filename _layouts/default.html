@@ -10,16 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
-    <ul>
-      <li>absolute_url {{ '/' | absolute_url }}</li>
-      <li>relative_url {{ '/' " | relative_url }}</li>
-      <li>site.url {{ site.url }}</li>
-      <li>site.baseurl {{ site.baseurl }}</li>
-      <li>page.title {{ page.title }}</li>
-      <li>page.url {{ page.url}}</li>
-    </ul>
     <div class="wrapper">
       {% comment %}
+      <ul>Debug variables: <li>absolute_url {{ '/' | absolute_url }}</li> <li>relative_url {{ '/' " | relative_url }}</li> <li>site.url {{ site.url }}</li> <li>site.baseurl {{ site.baseurl }}</li> <li>page.title {{ page.title }}</li> <li>page.url {{ page.url}}</li> </ul>
       <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
         <h1><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1> 
         {% if site.description or site.github.project_tagline %}
@@ -64,4 +57,18 @@
     {% endif %}
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script>
+    MathJax.Hub.Config({
+          TeX: {
+                equationNumbers: {
+                      autoNumber: "AMS"
+                    }
+              },
+          tex2jax: {
+                inlineMath: [ ['$', '$'] ],
+                displayMath: [ ['\[', '\]'] ],
+                processEscapes: true,
+              }
+        });
+  </script>
 </html>
