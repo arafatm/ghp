@@ -2,7 +2,7 @@
 title: GH-Pages Template 
 ---
 
-> Quote
+> :cry: Quote
 
     Block
 
@@ -11,6 +11,7 @@ title: GH-Pages Template
 - `$` $` f_{w,b}(x) = wx + b `$ is equivalent to 
 - `$` $f_{w,b}(x) = wx + b$ is equivalent to 
 - `$$` $$f_{w,b}(x) = wx + b$$ is equivalent to asdf
+- `$$` $$ f_{w,b}(x) = wx + b $$ is equivalent to asdf
 
 $$
 \begin{aligned}

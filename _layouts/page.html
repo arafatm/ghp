@@ -25,6 +25,7 @@ layout: default
   {% include toc.html html=content h_max=5 h_min=2 class="toc" %}
   </div>
   <div class="post-content">
+    <ul>Debug variables: <li>absolute_url {{ '/' | absolute_url }}</li> <li>relative_url {{ '/' " | relative_url }}</li> <li>site.url {{ site.url }}</li> <li>site.baseurl {{ site.baseurl }}</li> <li>page.title {{ page.title }}</li> <li>page.url {{ page.url}}</li> </ul>
     {{ content }}
   </div>
 </article>
