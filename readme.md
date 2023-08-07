@@ -36,11 +36,11 @@ $$
 $$
 ```
 
-| General Notation       | Python (if applicable) | Description                                                                                                   |
-| :--                    | :--                    | :--                                                                                                           |
-| $`w`$                  | `w`                    | parameter: weight                                                                                             |
-| $`b`$                  | `b`                    | parameter: bias                                                                                               |
-| $`f_{w,b}(x^{(i)})`$   | `f_wb`                 | The result of the model evaluation at $`x^{(i)}`$ parameterized by $`w,b`$: $`f_{w,b}(x^{(i)}) = wx^{(i)}+b`$ |
+| General Notation   | Python | Description                                                                                             |
+| :--                | :--    | :--                                                                                                     |
+| $w$                | `w`    | parameter: weight                                                                                       |
+| $b$                | `b`    | parameter: bias                                                                                         |
+| $f_{w,b}(x^{(i)})$ | `f_wb` | The result of the model evaluation at $x^{(i)}$ parameterized by $w,b$: $f_{w,b}(x^{(i)}) = wx^{(i)}+b$ |
 
 ## Testing
 
