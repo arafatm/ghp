@@ -1,4 +1,7 @@
-# GH-Pages Template 
+---
+layout: page
+title: GH-Pages Template 
+---
 
 <!-- vim-markdown-toc GFM -->
 
