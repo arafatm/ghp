@@ -16,7 +16,7 @@ h4::before { content: '####'; padding-right: 1ex;}
 h5::before { content: '#####'; padding-right: 1ex;}
 h6::before { content: '######'; padding-right: 1ex;}
 
-a {text-decoration: none; color: purple; }
+a {text-decoration: underline; color: purple; }
 img { margin: 0; padding: 1ex; }
 p { margin: 0.5em 0;}
 pre { padding: 1em; }
