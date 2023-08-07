@@ -16,15 +16,15 @@ h4::before { content: '####'; padding-right: 1ex;}
 h5::before { content: '#####'; padding-right: 1ex;}
 h6::before { content: '######'; padding-right: 1ex;}
 
-strong { color: red; font-weight: 900; }
-em { color: teal; text-decoration: underline; }
-del {}
 a {text-decoration: none; color: purple; }
 img { margin: 0; padding: 1ex; }
-
 p { margin: 0.5em 0;}
 pre { padding: 1em; }
 ul { margin: auto; }
+
+del {}
+em { background-color: green; color: white; font-style: normal; padding: 0.2ex 1ex; border-radius: 1.5ex; }
+strong { background-color: maroon; color: white; font-weight: 900; padding: 0.2ex 1ex; border-radius: 1.5ex;}
 
 a > img {border: 2px solid blue;}
 blockquote p { margin: 0; padding: 0;}
