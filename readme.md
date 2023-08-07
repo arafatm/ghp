@@ -5,12 +5,11 @@ title: GH-Pages Template
 ## Deploying
 Copy this folder and run `ggit_arafatm; ggit_pages`
 
-Links
-- https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
-- https://github.com/marketplace/actions/add-commit
 
 ## Useful Links
 
+- https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+- https://github.com/marketplace/actions/add-commit
 - [Theme Lanyon](https://lanyon.getpoole.com/)
 - https://lanyon.getpoole.com/
 
