@@ -18,9 +18,14 @@ h4::before { content: '####'; padding-right: 1ex;}
 h5::before { content: '#####'; padding-right: 1ex;}
 h6::before { content: '######'; padding-right: 1ex;}
 
+strong { }
+em { text-decoration: underline; }
+del {}
+
 a {text-decoration: none; color: purple; }
-blockquote { padding: 0.5em; margin: 0; border-left: 0.3em solid salmon; background-color: lavender;}
 img { margin: 0; padding: 1px; width: 24%; border: 1px solid black }
+
+blockquote { padding: 0.5em; margin: 0; border-left: 0.3em solid salmon; background-color: lavender;}
 p { margin: 0.5em 0;}
 pre { padding: 1em; }
 ul { margin: auto; }
