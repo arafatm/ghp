@@ -10,7 +10,8 @@ title: GH-Pages Template
 
 ## Math
 
-- `$` $` f_{w,b}(x) = wx + b `$ is equivalent to 
+- [Using MathJax](https://codepen.io/josdea/pen/rLOJxL)
+- X `$` $` f_{w,b}(x) = wx + b `$ is equivalent to 
 - `$` $ f_{w,b}(x) = wx + b $ is equivalent to 
 - `$$` $$f_{w,b}(x) = wx + b$$ is equivalent to asdf
 - `$$` $$ f_{w,b}(x) = wx + b $$ is equivalent to asdf
