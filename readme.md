@@ -10,14 +10,13 @@ title: GH-Pages Template
 
 - `$` $` f_{w,b}(x) = wx + b `$ is equivalent to 
 - `$` $f_{w,b}(x) = wx + b$ is equivalent to 
-- `$$` $$f_{w,b}(x) = wx + b$$ is equivalent to 
-asdf
+- `$$` $$f_{w,b}(x) = wx + b$$ is equivalent to asdf
 
 $$
 \begin{aligned}
 \text{repeat until convergence \{} \\ 
-   w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
-   b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
+  &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
+  &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
 \}
 \end{aligned}
 $$
