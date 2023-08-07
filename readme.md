@@ -1,5 +1,16 @@
 # GH-Pages Template 
 
+<!-- vim-markdown-toc GFM -->
+
+* [Deploying](#deploying)
+* [Useful Links](#useful-links)
+* [Syntax](#syntax)
+  * [Emoji](#emoji)
+  * [Math](#math)
+  * [Code](#code)
+
+<!-- vim-markdown-toc -->
+
 ## Deploying
 
 Create repo & `ggit_arafatm; ggit_pages`
