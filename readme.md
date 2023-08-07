@@ -69,7 +69,7 @@ Followed by some text on next line Followed by some text on next line Followed b
 ### Math
 
 - [Using MathJax](https://codepen.io/josdea/pen/rLOJxL)
-- Inline: `$` $ f_{w,b}(x) = wx + b $ is equivalent to 
+- Inline: `$` $f_{w,b}(x) = wx + b$ is equivalent to 
 - Inline: `$$` $$f_{w,b}(x) = wx + b$$ is equivalent to asdf
 
 Block: 
