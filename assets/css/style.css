@@ -2,7 +2,9 @@
 @import './rouge.monokai.css';
 
 html { background-color: darkgrey; }
+header {}
 body { font: 16px/20px sans-serif; max-width: 60em; background-color: white; margin: 0em auto; padding: 0.5em; border: 2px solid black; }
+footer { margin-top: 1em; padding-top: 1ex; border-top: 3px solid black; background-color: #CCC; }
 
 h1, h1 a { text-transform: uppercase; color: navy; }
 h2 { text-transform: capitalize; display: flex; align-items: center; }
