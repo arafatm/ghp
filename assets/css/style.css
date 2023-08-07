@@ -36,6 +36,7 @@ h1 + ul > li { display: inline; padding: 0 1em; }
 h1 + ul { display: inline; padding: 0; }
 
 img.emoji, img.ico { width: 1.2em; height: 1.2em; padding: 0; }
+input.task-list-item-checkbox { margin-right: 1ex}
 
 @media (max-width: 1200px) { img { width: 32%; } }
 @media (max-width: 800px) { img { width: 48%; } }
