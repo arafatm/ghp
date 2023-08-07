@@ -23,7 +23,7 @@ em { text-decoration: underline; }
 del {}
 
 a {text-decoration: none; color: purple; }
-img { margin: 0; padding: 1px; width: 24%; border: 1px solid black }
+img { margin: 0; padding: 1ex; }
 
 blockquote { padding: 0.5em; margin: 0; border-left: 0.3em solid salmon; background-color: lavender;}
 p { margin: 0.5em 0;}
