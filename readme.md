@@ -50,6 +50,9 @@ Color `#0969DA`
 - [ ] :a: task B
 - [ ] :b: task C
 
+![](https://media.giphy.com/media/kSbETPzWRAtMEdszqc/giphy.gif)
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTM4eGtoNmlzcWZ3OGZyeXE3aDJqd2N3cjBia2owcTQ1bHZmaXh4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZaEUSTAoWGQDhJumTu/giphy.gif)
+
 ### Math
 
 - [Using MathJax](https://codepen.io/josdea/pen/rLOJxL)
