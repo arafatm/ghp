@@ -4,7 +4,7 @@
 html { background-color: darkgrey; }
 header {}
 body { font: 16px/20px sans-serif; max-width: 60em; background-color: white; margin: 0em auto; padding: 0.5em; border: 2px solid black; }
-footer { margin-top: 1em; padding-top: 1ex; border-top: 3px solid black; background-color: #CCC; }
+footer { margin: 1em; padding: 1ex 5ex; border: 0.1ex solid black; }
 
 h1, h1 a { text-transform: uppercase; color: navy; }
 h2 { text-transform: capitalize; display: flex; align-items: center; }
@@ -35,8 +35,7 @@ blockquote p { margin: 0; padding: 0;}
 h1 + ul > li { display: inline; padding: 0 1em; }
 h1 + ul { display: inline; padding: 0; }
 
-img.emoji { width: 1.5em; height: 1.5em; border: 0.1em solid gray; border-radius: 0.7em; padding: 0.1em; background-color: salmon; }
-img.ico { width: 1em; height: 1em; }
+img.emoji, img.ico { width: 1.2em; height: 1.2em; padding: 0; }
 
 @media (max-width: 1200px) { img { width: 32%; } }
 @media (max-width: 800px) { img { width: 48%; } }
