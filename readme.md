@@ -8,7 +8,6 @@ title: GH-Pages Template
 * [Deploying](#deploying)
 * [Useful Links](#useful-links)
 * [Syntax](#syntax)
-  * [Emoji](#emoji)
   * [Math](#math)
   * [Code](#code)
 
@@ -29,11 +28,27 @@ Create repo & `ggit_arafatm; ggit_pages`
 
 ## Syntax
 
-### Emoji
-> Quote :cry:
+**This is bold text**
+
+_This text is italicized_
+
+~~This was mistaken text~~
+
+> Multiline Quote :cry: <newline>
 > :bulb: bulb :knot:
 
-    Block
+    Block Text
+
+```ruby
+world = "world"
+puts "Hello #{world}"
+```
+
+Color `#0969DA`
+
+- [ ] task A
+- [ ] :a: task B
+- [ ] :b: task C
 
 ### Math
 
