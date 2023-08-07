@@ -1,6 +1,6 @@
 html { background-color: darkgrey; }
 header {}
-body { font: 16px/20px sans-serif; max-width: 60em; background-color: white; margin: 0em auto; padding: 0.5em; border: 2px solid black; }
+body { font: 16px/20px sans-serif; max-width: 60em; background-color: white; margin: 0em auto; padding: 0 2em; border: 2px solid black; }
 footer { margin: 1em; padding: 1ex 5ex; border: 0.1ex solid black; text-align: center;}
 
 h1, h1 a { text-transform: uppercase; color: black; display: flex; align-items: center; }
@@ -23,8 +23,8 @@ pre { padding: 1em; }
 ul { margin: auto; }
 
 del {}
-em { background-color: green; color: white; font-style: normal; padding: 0.2ex 1ex; border-radius: 1.5ex; }
-strong { background-color: maroon; color: white; font-weight: 900; padding: 0.2ex 1ex; border-radius: 1.5ex;}
+em { color: green; font-style: normal; }
+strong { color: maroon; font-weight: 900; }
 
 a > img {border: 2px solid blue;}
 blockquote p { margin: 0; padding: 0;}
