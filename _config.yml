@@ -20,8 +20,9 @@ kramdown:
     max_level: 5
 plugins:
   - jekyll-feed
-  - jemoji
   - jekyll-redirect-from
+  - jekyll-titles-from-headings
+  - jemoji
 
 defaults:
   - scope:

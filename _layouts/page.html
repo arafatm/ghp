@@ -20,10 +20,12 @@ layout: default
     {% endif %}
     <hr />
   </div>
+  {% comment %}
   <div class="toc">
   <div class="toc">TOC:</div>
   {% include toc.html html=content h_max=5 h_min=2 class="toc" %}
   </div>
+  {% endcomment %}
   <div class="post-content">
     {{ content }}
   </div>
