@@ -1,6 +1,4 @@
----
-title: GH-Pages Template 
----
+# GH-Pages Template 
 
 ## Deploying
 
