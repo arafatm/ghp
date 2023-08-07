@@ -28,11 +28,14 @@ Create repo & `ggit_arafatm; ggit_pages`
 
 ## Syntax
 
-**This is bold text**
-
-_This text is italicized_
-
-~~This was mistaken text~~
+This is some random text **This is bold text** _This text is italicized_ ~~This
+was mistaken text~~ This is some random text **This is bold text** _This text
+is italicized_ ~~This was mistaken text~~ This is some random text **This is
+bold text** _This text is italicized_ ~~This was mistaken text~~ This is some
+random text **This is bold text** _This text is italicized_ ~~This was mistaken
+text~~ This is some random text **This is bold text** _This text is italicized_
+~~This was mistaken text~~ This is some random text **This is bold text** _This
+text is italicized_ ~~This was mistaken text~~
 
 > Multiline Quote :cry: <newline>
 > :bulb: bulb :knot:
