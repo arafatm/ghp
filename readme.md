@@ -3,8 +3,8 @@ title: GH-Pages Template
 ---
 
 ## Deploying
-Copy this folder and run `ggit_arafatm; ggit_pages`
 
+Create repo & `ggit_arafatm; ggit_pages`
 
 ## Useful Links
 
