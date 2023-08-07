@@ -23,7 +23,7 @@ h1 + ul > li { display: inline; padding: 0 1em; }
 a > img {border: 2px solid blue;}
 img { margin: 0; padding: 1px; width: 24%; border: 1px solid black }
 img.ico { width: 1em; height: 1em; }
-img.emoji { width: 2em; height: 2em; border: 1px solid gray; border-radius: 1em; padding: 0.4em; background-color: salmon; }
+img.emoji { width: 2em; height: 2em; border: 0.1em solid gray; border-radius: 0.7em; padding: 0.4em; background-color: salmon; }
 
 pre { padding: 1em; }
 
