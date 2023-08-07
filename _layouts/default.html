@@ -57,7 +57,7 @@
     {% endif %}
   </body>
 </html>
-<script type="text/x-mathjax-config">
+<script type="text/javascript">
   // https://benlansdell.github.io/computing/mathjax/
 /*
   MathJax.Hub.Config({
@@ -79,6 +79,12 @@
           alert("Math Processing Error: "+message[1]);
         });
         */
+        MathJax = {
+          tex: {
+              displayMath: [['$$', '$$'], ['\\[', '\\]']],
+              inlineMath: [['$', '$'], ['\\(', '\\)']],
+          },
+        };
 </script>
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
