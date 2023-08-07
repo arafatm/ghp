@@ -2,9 +2,17 @@
 title: GH-Pages Template 
 ---
 
-> :cry: Quote
+## Deploying
+Copy this folder and run `ggit_arafatm; ggit_pages`
 
-:bulb: bulb :knot:
+Links
+- https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+- https://github.com/marketplace/actions/add-commit
+
+## Emoji & Syntax
+
+> Quote :cry:
+> :bulb: bulb :knot:
 
     Block
 
@@ -44,12 +52,6 @@ $$
 | $f_{w,b}(x^{(i)})$ | `f_wb` | The result of the model evaluation at $x^{(i)}$ parameterized by $w,b$: $f_{w,b}(x^{(i)}) = wx^{(i)}+b$ |
 
 ## Testing
-
-Copy this folder and run `ggit_arafatm; ggit_pages`
-
-Links
-- https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
-- https://github.com/marketplace/actions/add-commit
 
 ## Code
 
