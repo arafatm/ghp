@@ -17,8 +17,8 @@ Create repo & `ggit_arafatm; ggit_pages`
 
 ## Useful Links
 
-- [CloudCannon Academy | Advanced navigation](https://learn.cloudcannon.com/jekyll/advanced-navigation/)
-- [CloudCannon Academy | List posts by category](https://learn.cloudcannon.com/jekyll/list-posts-by-category/)
+- [CloudCannon Academy - Advanced navigation](https://learn.cloudcannon.com/jekyll/advanced-navigation/)
+- [CloudCannon Academy - List posts by category](https://learn.cloudcannon.com/jekyll/list-posts-by-category/)
 - [GH Pages and Jekyll - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
 - [GH Workflows ](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
 - [GH Workflows: add-commit](https://github.com/marketplace/actions/add-commit)
