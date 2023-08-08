@@ -36,14 +36,14 @@ jobs:
       - name: copy GHP configs
         run: | 
           if test -d "ghp" ; then 
-            echo 'Found ghp/' | tee -a ghp.txt
+            echo 'Found ghp/'
             find ghp -maxdepth 1 -mindepth 1 ! \( -name ".git" -o -name "readme.md" -o -name "style.css" \) -exec echo {} \; -exec cp -rf {} . \;
-            ls -Al ghp/ | tee -a ghp.txt
+            ls -Al ghp/
           fi
 
       - name: Commit
         run: |
-          echo "######### $(date)" | tee -a ghp.txt
+          echo "######### $(date)"
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
