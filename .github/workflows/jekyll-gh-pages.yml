@@ -35,7 +35,8 @@ jobs:
 
       - name: copy GHP configs
         run: | 
-          if [ -d "ghp" ]; then 
+          if test -d "ghp" ; then 
+            echo 'Found ghp/'
             find ghp -maxdepth 1 -mindepth 1 ! \( -name ".git" -o -name "readme.md" -o -name "style.css" \) -exec echo {} \; -exec cp -rf {} . \;
           fi
           echo "######### ($date)" >> ghp.txt
