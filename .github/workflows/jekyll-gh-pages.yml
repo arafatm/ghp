@@ -35,18 +35,21 @@ jobs:
 
       - name: copy GHP configs
         run: | 
-          echo "######### ($date)" | tee -a ghp.txt
           if test -d "ghp" ; then 
             echo 'Found ghp/' | tee -a ghp.txt
             find ghp -maxdepth 1 -mindepth 1 ! \( -name ".git" -o -name "readme.md" -o -name "style.css" \) -exec echo {} \; -exec cp -rf {} . \;
             ls -Al ghp/ | tee -a ghp.txt
           fi
 
-      - name: Add and Commit
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: Arafat Mohamed
-          author_email: 19172+arafatm@users.noreply.github.com
+      - name: Commit
+        uses: actions/checkout@v3
+        run: |
+          echo "######### ($date)" | tee -a ghp.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Workflow Run at ($date)"
+          git push
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
