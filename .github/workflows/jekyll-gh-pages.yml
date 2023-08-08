@@ -42,7 +42,6 @@ jobs:
           fi
 
       - name: Commit
-        uses: actions/checkout@v3
         run: |
           echo "######### ($date)" | tee -a ghp.txt
           git config user.name github-actions
