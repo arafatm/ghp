@@ -21,6 +21,7 @@ img { margin: 0; padding: 1ex; max-height: 20em; max-width: 100%; }
 p { margin: 0.5em 0;}
 pre { padding: 1em; }
 ul { margin: auto; padding: 0 1em;}
+li { line-height: 1.4; }ht: 1.4; }
 
 li code, p code { background-color: silver; padding: 0.1ex 2ex; border-radius: 1ex; }
 blockquote { border-left: 2em solid red; }
