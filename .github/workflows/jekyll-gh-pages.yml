@@ -42,6 +42,7 @@ jobs:
             cp -rf _includes.
             cp -rf _layouts .
             cp -rf assets .
+            cp -rf favicon.ico .
           fi
 
       - name: Commit
