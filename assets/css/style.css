@@ -24,8 +24,7 @@ ul { margin: auto; padding: 0 1em;}
 li { line-height: 1.4; }ht: 1.4; }
 
 li code, p code { background-color: silver; padding: 0.1ex 2ex; border-radius: 1ex; }
-blockquote { border-left: 2em solid red; }
-
+blockquote { border-left: 1ex solid maroon; margin: 0; padding: 1ex 1ex; background-color: lavender; font-size: 1.3em; }
 
 del {}
 em { color: green; font-style: normal; }
