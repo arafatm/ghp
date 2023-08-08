@@ -2,23 +2,18 @@
 title: GH-Pages Template 
 ---
 
-`gh workflow run jekyll-gh-pages.yml`
-
-`gh api --paginate /users/arafatm/repos | jq '.[] | select(.has_pages == true) | .name'`
+- `gh workflow run jekyll-gh-pages.yml`
+- `gh api --paginate /users/arafatm/repos | jq '.[] | select(.has_pages == true) | .name'`
+- Create repo & `ggit_arafatm; ggit_pages`
 
 <!-- vim-markdown-toc GFM -->
 
-* [Deploying](#deploying)
 * [Useful Links](#useful-links)
 * [Syntax](#syntax)
   * [Math](#math)
   * [Code](#code)
 
 <!-- vim-markdown-toc -->
-
-## Deploying
-
-Create repo & `ggit_arafatm; ggit_pages`
 
 ## Useful Links
 
