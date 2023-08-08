@@ -1,6 +1,6 @@
 html { background-color: darkgrey; }
 header {}
-body { font: 14px sans-serif; max-width: 60em; background-color: white; margin: 0em auto; padding: 0 2em; border: 2px solid black; }
+body { font: 14px sans-serif; max-width: 60em; background-color: white; margin: 0em auto; padding: 0 1ex; border: 2px solid black; }
 footer { margin: 1em; padding: 1ex 5ex; border: 0.1ex solid black; text-align: center;}
 
 h1 { text-transform: uppercase; color: black; display: flex; align-items: center; }
