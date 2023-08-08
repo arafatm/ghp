@@ -3,6 +3,8 @@ layout: page
 title: GH-Pages Template 
 ---
 
+`curl https://api.github.com/users/arafatm/repos | jq '.[] | select(.has_pages == true) | .name'`
+
 <!-- vim-markdown-toc GFM -->
 
 * [Deploying](#deploying)
