@@ -22,6 +22,10 @@ p { margin: 0.5em 0;}
 pre { padding: 1em; }
 ul { margin: auto; padding: 0 1em;}
 
+li code, p code { background-color: silver; padding: 0.1ex 2ex; border-radius: 1ex; }
+blockquote { border-left: 2em solid red; }
+
+
 del {}
 em { color: green; font-style: normal; }
 strong { color: maroon; font-weight: 900; }
