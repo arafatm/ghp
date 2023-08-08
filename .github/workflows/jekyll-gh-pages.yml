@@ -35,12 +35,12 @@ jobs:
 
       - name: copy GHP configs
         run: | 
+          echo "######### ($date)" | tee -a ghp.txt
           if test -d "ghp" ; then 
-            echo 'Found ghp/'
+            echo 'Found ghp/' | tee -a ghp.txt
             find ghp -maxdepth 1 -mindepth 1 ! \( -name ".git" -o -name "readme.md" -o -name "style.css" \) -exec echo {} \; -exec cp -rf {} . \;
+            ls -Al ghp/ | tee -a ghp.txt
           fi
-          echo "######### ($date)" >> ghp.txt
-          ls -Al ghp/ >> ghp.txt
 
       - name: Add and Commit
         uses: EndBug/add-and-commit@v9
