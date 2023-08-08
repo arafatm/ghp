@@ -1,7 +1,6 @@
----
-layout: page
-title: GH-Pages Template 
----
+# GH-Pages Template 
+
+`gh workflow run jekyll-gh-pages.yml`
 
 `gh api --paginate /users/arafatm/repos | jq '.[] | select(.has_pages == true) | .name'`
 
