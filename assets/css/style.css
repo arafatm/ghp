@@ -18,12 +18,12 @@ h6::before { content: '######'; padding-right: 1ex;}
 
 a {text-decoration: underline; color: purple; }
 img { margin: 0; padding: 1ex; max-height: 20em; max-width: 100%; }
-p { margin: 0.5em 0;}
+p { margin: 1em;}
 pre { padding: 1em; }
-ul { margin: auto; padding: 0 1em;}
+ul { margin: 1em; padding: 0 1em;}
 li { line-height: 1.4; }ht: 1.4; }
 
-li code, p code { background-color: silver; padding: 0.1ex 2ex; border-radius: 1ex; }
+li code, p code,  { background-color: lavender; padding: 0.1ex 2ex; border-radius: 1ex; }
 blockquote { border-left: 1ex solid maroon; margin: 0; padding: 1ex 1ex; background-color: lavender; font-size: 1.3em; }
 
 del {}
