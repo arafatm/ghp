@@ -41,7 +41,11 @@ h1 + ul { display: inline; padding: 0; }
 img.emoji, img.ico { width: 1.2em; height: 1.2em; padding: 0; }
 input.task-list-item-checkbox { margin-right: 1ex}
 
-@media (min-width:800px) { p > img:active, details > img:active { position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 999; object-fit: contain; width: 100%; height: 100%; margin: 0; padding: 0; background-color: darkgrey; } }
+@media (min-width:800px) { p > img:active, details > img:active { 
+position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 999;
+object-fit: contain; width: 100%; height: 100%; margin: 0; padding: 0;
+background-color: darkgrey; 
+} }
 /*
 @media (max-width: 1200px) { img { width: 32%; } }
 @media (max-width: 800px) { img { width: 48%; } }
