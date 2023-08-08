@@ -37,8 +37,11 @@ jobs:
         run: | 
           if test -d "ghp" ; then 
             echo 'Found ghp/'
-            find ghp -maxdepth 1 -mindepth 1 ! \( -name ".git" -o -name "readme.md" -o -name "style.css" \) -exec echo {} \; -exec cp -rf {} . \;
-            ls -Al ghp/
+            cp -rf Gemfile .
+            cp -rf _config.yml .
+            cp -rf _includes.
+            cp -rf _layouts .
+            cp -rf assets .
           fi
 
       - name: Commit
