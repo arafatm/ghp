@@ -27,24 +27,35 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+
       - name: Checkout
         uses: actions/checkout@v3
         with:
           submodules: recursive
+
       - name: copy GHP configs
         run: | 
           if [[ -d "ghp" ]]; then 
-            find ghp -maxdepth 1 -mindepth 1 ! \( -name ".git" -o -name "readme.md" -o -name "style.css" \) -exec yes | cp -rf {} . \;
+            find ghp -maxdepth 1 -mindepth 1 ! \( -name ".git" -o -name "readme.md" -o -name "style.css" \) -exec echo {} \; -exec cp -rf {} . \;
           fi
+          echo "######### ($date)" >> ghp.txt
+          ls -Al ghp/ >> ghp.txt
+
       - name: Add and Commit
         uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Arafat Mohamed
+          author_email: 19172+arafatm@users.noreply.github.com
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
+            
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
@@ -59,8 +70,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-
-# vim: set foldlevel=9:
-# vim: set nowrap:
-# vim: set textwidth=0:
-# vim: set wrapmargin=0:
