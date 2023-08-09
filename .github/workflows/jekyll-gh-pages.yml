@@ -33,6 +33,7 @@ jobs:
         run: | 
           if test -d "ghp/" ; then 
             echo "Branch: $(git branch --show-current)"
+            echo "hash: $(git rev-parse HEAD)"
             git submodule update --recursive
             echo 'Found ghp/'
             rm -rf Gemfile && cp -rf ghp/Gemfile . && echo "copied ghp/Gemfile"
@@ -40,13 +41,13 @@ jobs:
             rm -rf _includes && cp -rf ghp/_includes . && echo "copied ghp/_includes"
             rm -rf _layouts && cp -rf ghp/_layouts . && echo "copied ghp/_layouts"
             rm -rf favicon && cp -rf ghp/favicon.ico . && echo "copied ghp/favicon.ico"
-            git status --short
+            if [[ -n $(git status --short) ]]; then
+              git add .
+              git commit -am
+              echo "hash: $(git rev-parse HEAD)"
+            fi
             echo 'Done copying ghp/'
           fi
-
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Apply GHP updates
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
