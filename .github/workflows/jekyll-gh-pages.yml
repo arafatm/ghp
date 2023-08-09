@@ -56,6 +56,7 @@ jobs:
               git commit -am "Git Action update"
               echo "hash: $(git rev-parse HEAD)"
             fi
+            echo "One last Gemfile - $(ls -l Gemfile)"
             echo 'Done copying ghp/'
           else
             echo "Is GHP..."
