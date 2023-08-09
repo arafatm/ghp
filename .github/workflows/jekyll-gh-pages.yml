@@ -34,6 +34,8 @@ jobs:
           echo "base_pwd: $(basename $(pwd))"
           if [[ $(basename $(pwd))" != "ghp" ]]; then
             echo "Not GHP, continue..."
+          else
+            echo "Is GHP..."
           fi
           #if [[ ! -d "ghp/" ]] ; then 
           #  git remote add -f ghp https://github.com/arafatm/ghp.git
