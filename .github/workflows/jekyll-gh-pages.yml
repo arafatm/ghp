@@ -27,12 +27,14 @@ jobs:
 
       - name: copy GHP configs
         run: | 
-          if [[ "$(basename $(pwd)" != "ghp" ]]; then
+          if [[ "$(basename $(pwd))" != "ghp" ]]; then
             git config user.name 'github'
             git config user.email 'noreply@github.com'
             echo "base_pwd: $(basename $(pwd))"
             rm -rf ghp 
             wget https://github.com/arafatm/ghp/tarball/main -O - | tar -xz --one-top-level=ghp --strip-components=1;
+            ghpArr=(".github" "_includes" "_layouts" "favicon.ico" "_config.yml")
+            for item in ${ghpArr[@]}; do echo $item; done
             if [[ ! -d ".github/workflows" ]]; then mkdir -p .github/workflows; fi
             if [[ ! -f ".github/workflows/ghp.yml" ]]; then rm -f .github/workflows/*.yml; fi
             cp -u ghp/.github/workflows/ghp.yml .github/workflows/ghp.yml
@@ -42,7 +44,7 @@ jobs:
             cp -u ghp/_config.yml . && echo "copied ghp/_config.yml"
             if [[ -n $(git status --short) ]]; then
               git add .
-              git commit -am "Git Action update"
+              git commit -am "Github Action update"
               git push
             fi
             echo "hash: $(git rev-parse HEAD)"
