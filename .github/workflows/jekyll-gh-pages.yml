@@ -37,6 +37,7 @@ jobs:
             rm -rf _layouts && cp -rf ghp/_layouts .
             rm -rf assets && cp -rf ghp/assets .
             rm -rf favicon && cp -rf ghp/favicon.ico .
+            echo 'Done copying ghp/'
           fi
 
       - name: Commit
