@@ -32,7 +32,7 @@ jobs:
       - name: copy GHP configs
         run: | 
           echo "base_pwd: $(basename $(pwd))"
-          if [[ $(basename $(pwd))" != "ghp" ]]; then
+          if [[ "$(basename $(pwd))" != "ghp" ]]; then
             echo "Not GHP, continue..."
           else
             echo "Is GHP..."
