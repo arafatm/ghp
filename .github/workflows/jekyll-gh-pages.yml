@@ -35,7 +35,7 @@ jobs:
             echo "Branch: $(git branch --show-current)"
             echo "hash: $(git rev-parse HEAD)"
             echo "submodule: $(git rev-parse HEAD:./ghp)"
-            git submodule update
+            git submodule update --remote
             echo "submodule: $(git rev-parse HEAD:./ghp)"
             echo "Gemfile: $(cat Gemfile)"
             echo "ls: $(ls -l Gemfile)"
