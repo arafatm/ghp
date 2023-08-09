@@ -31,7 +31,7 @@ jobs:
             git config user.name 'github'
             git config user.email 'noreply@github.com'
             echo "base_pwd: $(basename $(pwd))"
-            rm -rf ghp; 
+            rm -rf ghp 
             wget https://github.com/arafatm/ghp/tarball/main -O - | tar -xz --one-top-level=ghp --strip-components=1;
             if [[ ! -d ".github/workflows" ]]; then mkdir -p .github/workflows; fi
             if [[ ! -f ".github/workflows/ghp.yml" ]]; then rm -f .github/workflows/*.yml; fi
