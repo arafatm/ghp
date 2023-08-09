@@ -40,7 +40,7 @@ jobs:
             echo "Gemfile: $(cat Gemfile)"
             echo "ls: $(ls -l Gemfile)"
             rm -rf Gemfile 
-            echo "$(ls -a Gemfile") 
+            echo "$(ls -a Gemfile)" 
             cp -rf ghp/Gemfile . 
             echo "$(cat Gemfile)"
             echo "ls: $(ls -l Gemfile)"
