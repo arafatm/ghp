@@ -32,14 +32,14 @@ jobs:
           echo "base_pwd: $(basename $(pwd))"
           if [[ "$(basename $(pwd))" != "ghp" ]]; then
             echo "Not GHP, continue..."
-            if [[ ! -d "ghp/" ]] ; then 
-              git remote add -f ghp https://github.com/arafatm/ghp.git
-              git subtree add --prefix ghp ghp main --squash
-            fi
-            echo "Before fetch ghp/Gemfile - $(head -n 5 ghp/Gemfile)"
+            echo "git remote add ghp"
+            git remote add -f ghp https://github.com/arafatm/ghp.git
+            echo "git subtree add ghp"
+            git subtree add --prefix ghp ghp main --squash
+            echo "Before subtree fetch & pull ghp/Gemfile - $(head -n 5 ghp/Gemfile)"
             git fetch ghp main
             git subtree pull --prefix ghp ghp main --squash
-            echo "After fetch ghp/Gemfile - $(head -n 5 ghp/Gemfile)"
+            echo "After subtree fetch & pull ghp/Gemfile - $(head -n 5 ghp/Gemfile)"
             if [[ ! -d ".github/workflows" ]]; then mkdir -p .github/workflows; fi
             if [[ ! -f ".github/workflows/ghp.yml" ]]; then rm -f .github/workflows/*.yml; fi
             cp -u ghp/.github/workflows/ghp.yml .github/workflows/ghp.yml
