@@ -41,7 +41,7 @@ jobs:
             git subtree pull --prefix ghp ghp main --squash
             echo "After fetch ghp/Gemfile - $(head -n 5 ghp/Gemfile)"
             if [[ ! -d ".github/workflows" ]]; then mkdir -p .github/workflows; fi
-            if [[ ! -f ".github/workflows/ghp.yml" ]]; then rm -f .github/workflows/*.yml fi
+            if [[ ! -f ".github/workflows/ghp.yml" ]]; then rm -f .github/workflows/*.yml; fi
             cp -u ghp/.github/workflows/ghp.yml .github/workflows/ghp.yml
             cp -ru ghp/_includes . && echo "copied ghp/_includes"
             cp -ru ghp/_layouts . && echo "copied ghp/_layouts"
