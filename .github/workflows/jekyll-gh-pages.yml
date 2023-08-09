@@ -34,13 +34,16 @@ jobs:
           if test -d "ghp/" ; then 
             echo "Branch: $(git branch --show-current)"
             echo "hash: $(git rev-parse HEAD)"
-            git submodule update --recursive
-            echo 'Found ghp/'
+            echo "submodule: $(git rev-parse HEAD:./ghp)"
+            git submodule update
+            echo "submodule: $(git rev-parse HEAD:./ghp)"
             echo "Gemfile: $(cat Gemfile)"
+            echo "ls: $(ls -l Gemfile)"
             rm -rf Gemfile 
             echo "$(ls -a Gemfile") 
             cp -rf ghp/Gemfile . 
             echo "$(cat Gemfile)"
+            echo "ls: $(ls -l Gemfile)"
             rm -rf _config.yml && cp -rf ghp/_config.yml . && echo "copied ghp/_config.yml"
             rm -rf _includes && cp -rf ghp/_includes . && echo "copied ghp/_includes"
             rm -rf _layouts && cp -rf ghp/_layouts . && echo "copied ghp/_layouts"
