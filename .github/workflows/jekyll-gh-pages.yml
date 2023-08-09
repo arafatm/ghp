@@ -51,6 +51,7 @@ jobs:
             if [[ -n $(git status --short) ]]; then
               git add .
               git commit -am "Git Action update"
+              git push
               echo "hash: $(git rev-parse HEAD)"
             fi
             echo "--- touch.txt --- "
