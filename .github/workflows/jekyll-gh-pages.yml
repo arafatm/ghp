@@ -33,9 +33,9 @@ jobs:
         run: | 
           if test -d "ghp/" ; then 
             echo "Branch: $(git branch --show-current) -- hash: $(git rev-parse HEAD)"
-            echo "submoduleb: $(git rev-parse HEAD:./ghp)"
+            echo "before submodule: $(cd ghp && git branch)"
             git submodule update --init --recursive
-            echo "submodule: $(git rev-parse HEAD:./ghp)"
+            echo "after submodule: $(git rev-parse HEAD:./ghp)"
             echo "Gemfile: $(cat Gemfile)"
             echo "ls: $(ls -l Gemfile)"
             rm -rf Gemfile 
