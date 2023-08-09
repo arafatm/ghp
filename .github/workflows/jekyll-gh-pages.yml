@@ -33,7 +33,7 @@ jobs:
 
       - name: copy GHP configs
         run: | 
-          if test -d "ghp" ; then 
+          if test -d "ghp/" ; then 
             echo 'Found ghp/'
             rm -rf Gemfile && cp -rf ghp/Gemfile . && echo "copied ghp/Gemfile"
             rm -rf _config.yml && cp -rf ghp/_config.yml . && echo "copied ghp/_config.yml"
