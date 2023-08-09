@@ -46,7 +46,7 @@ jobs:
       - name: Commit
         run: |
           echo "######### $(date)"
-          if [ -n "$(git status --short)" ]; then
+          if [[ -n "$(git status --short)" ]]; then
             git config user.name "Github Action"
             git config user.email "noreply@github.com"
             git add .
