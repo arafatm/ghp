@@ -7,7 +7,7 @@ footer span.github { text-align: right; margin-right: 2em; padding: 1ex 2em; bor
 
 nav { background-color: maroon; overflow: hidden; }
 nav>ul { list-style: none; margin: 0; padding: 0; display: flex; }
-nav>ul li { margin-right: 1em; }
+nav>ul li { margin-left: 1em; }
 nav>ul li:last-child { margin-right: 0; /* Remove margin from last item */ }
 nav>ul a { text-decoration: none; color: white; font-weight: bold; }
 
