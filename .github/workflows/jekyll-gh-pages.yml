@@ -34,7 +34,7 @@ jobs:
             echo "base_pwd: $(basename $(pwd))"
             rm -rf ghp 
             wget https://github.com/arafatm/ghp/tarball/main -O - | tar -xz --one-top-level=ghp --strip-components=1;
-            ghpArr=( ".github" "_includes" "_layouts" "favicon.ico" "_config.yml" )
+            ghpArr=( "Gemfile" "_config.yml" "_includes" "_layouts" "favicon.ico" )
             for item in ${ghpArr[@]}; do 
               rm -rf $item
               cp -r ghp/$item .
