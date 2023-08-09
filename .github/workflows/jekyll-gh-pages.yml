@@ -51,12 +51,14 @@ jobs:
             cp -ru ghp/_config.yml . && echo "copied ghp/_config.yml"
             echo "AFTER ls: $(ls -l Gemfile)"
             echo "git status: $(git status --short)"
+            echo $(date) >> touch.txt
             if [[ -n $(git status --short) ]]; then
               git add .
               git commit -am "Git Action update"
               echo "hash: $(git rev-parse HEAD)"
             fi
-            echo "One last Gemfile - $(ls -l Gemfile)"
+            echo "--- touch.txt --- "
+            tail -n 3 touch.txt
             echo 'Done copying ghp/'
           else
             echo "Is GHP..."
