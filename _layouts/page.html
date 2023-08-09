@@ -10,7 +10,7 @@ layout: default
     {% if page.source %} <div>Source: <a href="{{ page.source }}">{{ page.source }}</a></div> {% endif %}
     {% if page.tags %} <div> Tags: {% for tag in page.tags %} <strong>{{ tag }}&nbsp;</strong> {% endfor %} </div> {% endif %}
   </section>
-  {% endfor %}
+  {% endif %}
   <nav class="toc">{% include toc.html html=content h_min=2 h_max=3 class="nav" %} </nav>
   <section class="body"> {{ content }} </section>
 </article>
