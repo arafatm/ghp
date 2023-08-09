@@ -25,7 +25,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          submodules: true
+          submodules: recursive
+
+      - name: Update module
+        run: |
+          git submodule update --recursive
 
       - name: copy GHP configs
         run: | 
@@ -44,10 +48,10 @@ jobs:
         run: |
           echo "######### $(date)"
           if [ -n "$(git status --short)" ]; then
-            git config user.name github-actions
-            git config user.email github-actions@github.com
+            git config user.name "Github Action"
+            git config user.email "noreply@github.com"
             git add .
-            git commit -m "Workflow Run at ($date)"
+            git commit -am "Workflow Run at ($date)"
             git push
           else
             echo "No files to commit"
