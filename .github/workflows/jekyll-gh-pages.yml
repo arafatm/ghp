@@ -32,6 +32,9 @@ jobs:
       - name: copy GHP configs
         run: | 
           echo "base_pwd: $(basename $(pwd))"
+          if [[ $(basename $(pwd))" != "ghp" ]]; then
+            echo "Not GHP, continue..."
+          fi
           #if [[ ! -d "ghp/" ]] ; then 
           #  git remote add -f ghp https://github.com/arafatm/ghp.git
           #  git subtree add --prefix ghp ghp main --squash
