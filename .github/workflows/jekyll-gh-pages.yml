@@ -36,7 +36,7 @@ jobs:
             echo "hash: $(git rev-parse HEAD)"
             git submodule update --recursive
             echo 'Found ghp/'
-            rm -rf Gemfile && cp -rf ghp/Gemfile . && echo "copied ghp/Gemfile"
+            cat Gemfile; rm -rf Gemfile; cat Gemfile; cp -rf ghp/Gemfile .; cat Gemfile
             rm -rf _config.yml && cp -rf ghp/_config.yml . && echo "copied ghp/_config.yml"
             rm -rf _includes && cp -rf ghp/_includes . && echo "copied ghp/_includes"
             rm -rf _layouts && cp -rf ghp/_layouts . && echo "copied ghp/_layouts"
