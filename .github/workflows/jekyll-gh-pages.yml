@@ -31,6 +31,8 @@ jobs:
 
       - name: copy GHP configs
         run: | 
+          git config user.name 'github'
+          git config user.email 'noreply@github.com'
           echo "base_pwd: $(basename $(pwd))"
           if [[ "$(basename $(pwd))" != "ghp" ]]; then
             echo "Not GHP, continue..."
@@ -48,8 +50,6 @@ jobs:
             echo "AFTER ls: $(ls -l Gemfile)"
             echo "git status: $(git status --short)"
             if [[ -n $(git status --short) ]]; then
-              git config user.name 'github'
-              git config user.email 'noreply@github.com'
               git add .
               git commit -am "Git Action update"
               echo "hash: $(git rev-parse HEAD)"
