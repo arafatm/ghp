@@ -40,8 +40,10 @@ jobs:
               git remote add -f ghp https://github.com/arafatm/ghp.git
               git subtree add --prefix ghp ghp main --squash
             fi
+            echo "Before fetch ghp/Gemfile - $(head -n 5 ghp/Gemfile"
             git fetch ghp main
             git subtree pull --prefix ghp ghp main --squash
+            echo "After fetch ghp/Gemfile - $(head -n 5 ghp/Gemfile"
             cp -ru ghp/_includes . && echo "copied ghp/_includes"
             cp -ru ghp/_layouts . && echo "copied ghp/_layouts"
             cp -ru ghp/favicon.ico . && echo "copied ghp/favicon.ico"
