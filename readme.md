@@ -1,9 +1,4 @@
 ---
-layout: home
+layout: articles
 title: GH-Pages Template 
 ---
-
-<!-- vim-markdown-toc GFM -->
-
-<!-- vim-markdown-toc -->
-
