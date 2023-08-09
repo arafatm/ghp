@@ -31,12 +31,12 @@ jobs:
         run: | 
           if test -d "ghp" ; then 
             echo 'Found ghp/'
-            cp -rf ghp/Gemfile .
-            cp -rf ghp/_config.yml .
-            cp -rf ghp/_includes .
-            cp -rf ghp/_layouts .
-            cp -rf ghp/assets .
-            cp -rf ghp/favicon.ico .
+            rm -rf ghp/Gemfile && cp -rf ghp/Gemfile .
+            rm -rf ghp/_config.yml && cp -rf ghp/_config.yml .
+            rm -rf ghp/_includes && cp -rf ghp/_includes .
+            rm -rf ghp/_layouts && cp -rf ghp/_layouts .
+            rm -rf ghp/assets && cp -rf ghp/assets .
+            rm -rf ghp/favicon && cp -rf ghp/favicon.ico .
           fi
 
       - name: Commit
