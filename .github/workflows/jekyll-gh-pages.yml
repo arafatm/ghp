@@ -2,7 +2,7 @@
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
-  # Runs on pushes targeting the default branch
+  workflow_call:
   push:
   schedule:
     - cron: '0 3 * * *'
@@ -37,7 +37,6 @@ jobs:
         run: | 
           if test -d "ghp" ; then 
             echo 'Found ghp/'
-            cp -rf ghp/.github .
             cp -rf ghp/Gemfile .
             cp -rf ghp/_config.yml .
             cp -rf ghp/_includes .
