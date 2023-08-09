@@ -32,7 +32,7 @@ jobs:
       - name: copy GHP configs
         run: | 
           if test -d "ghp/" ; then 
-            git branch --show-current
+            echo "Branch: $(git branch --show-current)""
             git submodule update --recursive
             echo 'Found ghp/'
             rm -rf Gemfile && cp -rf ghp/Gemfile . && echo "copied ghp/Gemfile"
@@ -40,6 +40,7 @@ jobs:
             rm -rf _includes && cp -rf ghp/_includes . && echo "copied ghp/_includes"
             rm -rf _layouts && cp -rf ghp/_layouts . && echo "copied ghp/_layouts"
             rm -rf favicon && cp -rf ghp/favicon.ico . && echo "copied ghp/favicon.ico"
+            git status --short
             echo 'Done copying ghp/'
           fi
 
