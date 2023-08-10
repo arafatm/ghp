@@ -2,8 +2,6 @@ html { background-color: darkgrey; }
 header {}
 body { font: 14px sans-serif; max-width: 60em; background-color: white; margin: 0em auto; padding: 0 1ex; border: 2px solid black; }
 footer { display: flex; justify-content: space-between; margin: 1em; padding: 1ex 5ex; text-align: center;}
-footer span.home { text-align: left; margin-left: 2em; padding: 1ex 2em; border: 1px solid black; }
-footer span.github { text-align: right; margin-right: 2em; padding: 1ex 2em; border: 1px solid black; }
 
 nav { /*! background-color: maroon; overflow: hidden; border: 0; */}
 nav>ul { list-style: none; margin: 0; padding: 0; display: flex; /*! background-color: maroon; */}

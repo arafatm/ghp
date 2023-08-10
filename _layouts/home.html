@@ -2,6 +2,7 @@
 layout: default
 ---
 
+{% if site.baseurl == "/ghp" %} 
 <section class="footer"> 
   <h2>Debug variables: </h2> 
   <ul>
@@ -13,7 +14,6 @@ layout: default
     <li>page.url {{ page.url}} </li> 
   </ul> 
 </section> 
-{% if site.baseurl == "/ghp" %} 
 {% endif %}
 
 <article>
