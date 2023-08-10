@@ -2,6 +2,21 @@
 layout: default
 ---
 
+{{ site.baseurl }}
+{% if site.baseurl == "ghp/" %} 
+<section class="footer"> 
+  <h2>Debug variables: </h2> 
+  <ul>
+    <li>absolute_url {{ '/' | absolute_url }} </li> 
+    <li>relative_url {{ '/' | relative_url }} </li> 
+    <li>site.url {{ site.url }} </li> 
+    <li>site.baseurl {{ site.baseurl }} </li> 
+    <li>page.title {{ page.title }} </li> 
+    <li>page.url {{ page.url}} </li> 
+  </ul> 
+</section> 
+{% endif %}
+
 <article>
   <section class="body"> {{ content }} </section>
 
