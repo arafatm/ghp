@@ -5,3 +5,25 @@
     <a href="{{ site.github.repository_url }}">{{ site.github.owner_name }}</a> 
   </span>
 </footer>
+{% if site.baseurl == "/ghp" or site.url == 'http://localhost:4000'  %} 
+<section class="footer"> 
+  <h2>Debug variables: </h2> 
+  <ul>
+    <li>| absolute_url {{ '/' | absolute_url }} </li> 
+    <li>| relative_url {{ '/' | relative_url }} </li> 
+    <li>site.url {{ site.url }} </li> 
+    <li>site.baseurl {{ site.baseurl }} </li>  
+    <li>page.title {{ page.title }} </li> 
+    <li>page.url {{ page.url}} </li> 
+    <li>github_username: {{ github_username }}</li>
+    <li>site.github_username: {{ site.github_username }}</li>
+  </ul> 
+  <table>
+    {% for s in site %}
+    {% if {{s}} != "html_pages" and {{s}} != "documents" and {{s}} != "pages" and {{s}} != "github" %}
+    <tr><td>{{s]}}</td><td>{{ site[s] }}</td></tr>
+    {% endif %}
+    {% endfor %}
+  </table>
+</section> 
+{% endif %}
