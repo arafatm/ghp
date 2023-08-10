@@ -3,6 +3,12 @@ layout: home
 title: arafatm template
 ---
 
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
 - `gh workflow run jekyll-gh-pages.yml`
 - `gh api --paginate /users/arafatm/repos | jq '.[] | select(.has_pages == true) | .name'`
 - Create repo & `ggit_arafatm; ggit_pages`

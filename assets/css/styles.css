@@ -20,17 +20,17 @@ h1+ul  { display: inline; padding: 0; }
 h1+ul > li  { display: inline; padding: 0 1rem; }
 h1::after  { content: ''; flex: 1; margin-left: 0.5rem; height: 0.1rem; background-color: #000; }
 h1::before { content: ''; flex: 1; margin-right: 0.5rem; height: 0.1rem; background-color: #000; }
-h2  { text-transform: capitalize; display: flex; align-items: center; padding-top: 0.5rem; border-bottom: 5px solid black; }
+h2  { text-transform: capitalize; display: flex; align-items: center; padding-top: 0.5rem; border-bottom: 0.2rem  solid black; }
 h2::after  { content: ''; flex: 1; margin-left: 1rem; height: 0.1rem; background-color: #000; }
-h2::before { content: 'H2. '; padding-right: 0.5rem; }
-h3  { border-bottom: 4px solid black; padding-top: 0.5rem;}
-h3::before { content: 'H3. '; padding-right: 0.5rem;} 
-h4  { border-bottom: 3px solid black; padding-top: 0.5rem;}
-h4::before { content: 'H4. '; padding-right: 0.5rem;}
-h5  { border-bottom: 3px solid black; padding-top: 0.5rem;}
-h5::before { content: 'H5. '; padding-right: 0.5rem;}
-h6  { border-bottom: 3px solid black; padding-top: 0.5rem;}
-h6::before { content: 'H6. '; padding-right: 0.5rem;}
+h2::before { padding-right: 0.5rem; }
+h3  { border-bottom: 0.2rem double black; padding-top: 0.5rem;}
+h3::before { padding-right: 0.5rem;} 
+h4  { border-bottom: 0.1rem  dashed black; padding-top: 0.5rem;}
+h4::before { padding-right: 0.5rem;}
+h5  { border-bottom: 0.1rem dotted black; padding-top: 0.5rem;}
+h5::before { padding-right: 0.5rem;}
+h6  { border-bottom: 0; padding-top: 0.5rem;}
+h6::before { padding-right: 0.5rem;}
 
 a  {text-decoration: none; color: blue; }
 a:not([href])  { color: purple; }
