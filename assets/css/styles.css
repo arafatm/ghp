@@ -41,7 +41,7 @@ code  {  color: lavender; background-color: #272822; padding: 0.1rem 1rem; borde
 details  {  color: lavender; background-color: #272822; padding: 0.1rem 1rem; border-radius: 1rem; }
 em  { background-color: limegreen; padding: 0.1rem 0.3rem; font-style: normal; }
 img  { margin: 0; padding: 0.5rem; max-height: 20rem; max-width: 100%; }
-img.emoji, img.ico  { width: 1.2rem; height: 1.2rem; padding: 0; }
+img.emoji, img.ico  { width: 1.2rem; height: 1.2rem; padding: 0; border: 0;}
 input.task-list-item-checkbox  { margin-right: 0.5rem}
 li  { line-height: 1.4; }
 li ul { margin: 0; }
