@@ -41,9 +41,7 @@ jobs:
               echo "deleted and copied $item"
             done
             if [[ -n $(git status --short) ]]; then
-              git add .
-              git commit -am "Github Action update"
-              git push
+              echo "--- Updated ghp"
             fi
             echo "--- Updated hash: $(git rev-parse HEAD)"
           fi
