@@ -97,6 +97,9 @@ puts "test #{i}"
 ## Heading 2
 ### Heading 3
 text
+- followed by list
+  - 2nd order
+- followed by list
 ### Heading 3
 ### Heading 3
 ### Heading 3
