@@ -8,15 +8,15 @@ body  { font: 14px "fira sans", sans-serif; max-width: 60rem; background-color: 
 footer  { display: flex; justify-content: space-between; margin: 1rem; padding: 0.5rem 3rem; text-align: center;}
 
 nav ul  { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; /*! background-color: maroon; */}
-nav ul li  { padding: 0 0.5rem; margin: 0 0.2ex;}
-nav ul li a  { text-decoration: none; color: black; font-weight: bold; }
+nav ul li  { padding: 0; margin: 0 0.2ex;}
+nav ul li a  { text-decoration: underline; color: darkblue; font-weight: bold; }
 nav ul li:has(> ul):before { content: '> '; }
 nav ul li:last-child  { margin-right: 0; /* Remove margin from last item */ }
 nav.toc>ul  { list-style: none; margin: 1rem; padding: 0; display: block; flex-wrap: wrap; }
-nav.toc>ul>li  { position: relative; padding: 0.5rem; border: 1px solid white; margin: 0; }
-nav.toc>ul>li:hover>ul  { display: block; margin: 0.5rem 0 0 0.5rem; padding: 0; /* Show submenu on hover */ }
+nav.toc>ul>li  { position: relative; padding: 0; border: 1px solid white; margin: 0; }
+nav.toc>ul>li:hover>ul  { display: block; margin: 0 0 0 0.5rem; padding: 0; /* Show submenu on hover */ }
 nav.toc>ul>li>ul   { display: none; }
-nav.toc>ul>li>ul>li   { border-top: 1px solid white; padding: 0.5rem 0; margin: 0;}
+nav.toc>ul>li>ul>li   { border-top: 1px solid white; padding: 0; margin: 0;}
 nav>ul>li:before { content: '> '; }
 nav>ul>li>ul>li:before { content: '> '; }
 
@@ -37,7 +37,7 @@ h5::before { padding-right: 0.5rem;}
 h6  { font-size: 1.1rem; text-decoration: none; text-decoration-style: dotted; text-underline-offset: 0.5rem; color: var(--c1); }
 h6::before { padding-right: 0.5rem;}
 
-a  {text-decoration: none; color: blue; }
+a  { text-decoration: underline; color: darkblue; }
 a:not([href])  { color: var(--c1); }
 a>img  {border: 2px solid blue;}
 blockquote  { border-left: 0.2rem solid var(--c1); margin: 0rem; padding: 0.5rem; color: var(--c1)}
