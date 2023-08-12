@@ -1,4 +1,7 @@
 /* arafatm.com */
+:root {
+  --c1: #525559;
+}
 html  { background-color: darkgrey; }
 header  {}
 body  { font: 14px "fira sans", sans-serif; max-width: 60rem; background-color: white; margin: 0rem auto; padding: 0 0.5rem; border: 2px solid silver; line-height: 1.4rem; }
@@ -16,42 +19,43 @@ nav.toc>ul>li:active>ul  { display: block; margin: 0.5rem 0 0 0.5rem; padding: 0
 nav.toc>ul>li>ul   { display: none; }
 nav.toc>ul>li>ul>li   { border-top: 1px solid white; padding: 0.5rem 0; margin: 0;}
 
-h1  { text-transform: uppercase; color: black; display: flex; align-items: center; }
+h1  { font-size: 1.6rem; text-transform: uppercase; display: flex; align-items: center; color: var(--c1); }
 h1+ul  { display: inline; padding: 0; }
 h1+ul > li  { display: inline; padding: 0 1rem; }
-h1::after  { content: ''; flex: 1; margin-left: 0.5rem; height: 0.1rem; background-color: #000; }
-h1::before { content: ''; flex: 1; margin-right: 0.5rem; height: 0.1rem; background-color: #000; }
-h2  { text-transform: capitalize; display: flex; align-items: center; padding-top: 0.5rem; border-bottom: 0.2rem  solid black; }
-h2::after  { content: ''; flex: 1; margin-left: 1rem; height: 0.1rem; background-color: #000; }
+h1::after  { content: ''; flex: 1; margin-left: 0.5rem; height: 0.1rem; }
+h1::before { content: ''; flex: 1; margin-right: 0.5rem; height: 0.1rem; color: var(--c1); }
+h2  { font-size: 1.5rem; text-transform: capitalize; display: flex; align-items: center; padding-top: 0.5rem; border-bottom: 0.2rem  solid var(--c1); padding: 0.5rem 0; color: var(--c1); margin: 2rem 0; }
+h2::after  { content: ''; flex: 1; margin-left: 1rem; height: 0.1rem; color: var(--c1); }
 h2::before { padding-right: 0.5rem; }
-h3  { border-bottom: 0.2rem double black; padding-top: 0.5rem;}
+h3  { line-height: 1rem; font-size: 1.4rem; text-decoration: underline; text-decoration-style: double; text-underline-offset: 0.5rem; padding: 0.5rem 0; color: var(--c1); margin: 2rem 0;}
 h3::before { padding-right: 0.5rem;} 
-h4  { border-bottom: 0.1rem  dashed black; padding-top: 0.5rem;}
+h4  { font-size: 1.3rem; text-decoration: underline; text-decoration-style: dashed; text-underline-offset: 0.5rem; padding-top: 0.5rem; color: var(--c1); margin: 1.8rem 0;}
 h4::before { padding-right: 0.5rem;}
-h5  { border-bottom: 0.1rem dotted black; padding-top: 0.5rem;}
+h5  { font-size: 1.2rem; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 0.5rem; padding-top: 0.5rem; color: var(--c1); margin: 1.6rem 0;}
 h5::before { padding-right: 0.5rem;}
-h6  { border-bottom: 0; padding-top: 0.5rem;}
+h6  { font-size: 1.1rem; color: var(--c1); margin: 1.4rem 0; }
 h6::before { padding-right: 0.5rem;}
 
 a  {text-decoration: none; color: blue; }
-a:not([href])  { color: purple; }
+a:not([href])  { color: var(--c1); }
 a>img  {border: 2px solid blue;}
-blockquote  { border-left: 0.5rem solid maroon; margin: 0.5rem; padding: 0.5rem 0.5rem; background-color: lavender; }
+blockquote  { border-left: 0.2rem solid var(--c1); margin: 0rem; padding: 0.5rem; color: var(--c1)}
 blockquote p  { margin: 0; padding: 0;}
-code  { font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace; font-weight: bold;  }
-details  { border: 0.2rem solid purple; padding: 0; border-radius: 1rem; }
-details summary { color: white; background-color: mediumpurple; padding: 0.1rem 1rem; border-radius: 1rem; }
-em  { background-color: limegreen; padding: 0.1rem 0.3rem; font-style: normal; }
+code  { font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace; font-weight: bold; color: var(--c1);  }
+details  { border: 0.1rem solid var(--c1); border-radius: 1rem; }
+details > * { margin-left: 1rem; }
+details summary { margin-left: 0; padding: 0.1rem 1rem; border-radius: 1rem; }
+em  { background-color: wheat; padding: 0.1rem 0.3rem; font-style: normal; }
 img  { margin: 0; padding: 0.5rem; max-height: 20rem; max-width: 100%; }
-img.emoji, img.ico  { vertical-align: middle; width: 1.3rem; height: 1.3rem; padding: 0; background-color: salmon; border-radius: 1rem; border: 0;}
+img.emoji, img.ico  { vertical-align: middle; width: 1.3rem; height: 1.3rem; padding: 0rem; }
 input.task-list-item-checkbox  { margin-right: 0.5rem}
 li ul { margin: 0; }
-p  { margin: 1rem;}
-pre { padding: 0 1rem; }
-pre.highlight code { padding: 0; }
+p  { }
+pre { padding: 0.5rem; }
+pre.highlight code { padding: 0; color: white;}
 section  { padding: 0.5rem 0 1rem 0; /*! border-bottom: 1px solid black; */}
 section.header  { margin-bottom: 1rem; padding: 0.5rem; border: 1px solid black; border-radius: 1rem;}
-strong  { background-color: pink; padding: 0.1rem 0.3rem;  font-weight: normal; }
+strong  { background-color: pink; padding: 0.1rem 0.3rem; font-weight: bolder; }
 table  { border-collapse: collapse; }
 td  { border: 1px solid black; padding: 0.5rem; vertical-align: top;  }
 ul  { margin: 1rem; padding: 0 1rem;}
