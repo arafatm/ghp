@@ -40,7 +40,7 @@ h6::before { padding-right: 0.5rem;}
 a  { text-decoration: underline; color: darkblue; }
 a:not([href])  { color: var(--c1); }
 a>img  {border: 2px solid blue;}
-blockquote  { border-left: 0.2rem solid var(--c1); margin: 0rem; padding: 0.5rem; color: var(--c1)}
+blockquote  { margin: 0rem; padding: 0.5rem; }
 blockquote p  { margin: 0; padding: 0;}
 blockquote p:before  { content: '> '; font-size: 1.5rem; vertical-align: middle; }
 code  { font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace; font-weight: bold; color: var(--c1);  }
