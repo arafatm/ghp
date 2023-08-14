@@ -2,8 +2,9 @@
 layout: default
 ---
 
+<!-- _layouts/page.html -->
+{% include frontmatter.html %}
+<nav class="toc">{% include toc.html html=content h_min=2 h_max=3 class="nav" %} </nav>
 <article>
-  {% include frontmatter.html %}
-  <nav class="toc">{% include toc.html html=content h_min=2 h_max=3 class="nav" %} </nav>
   <section class="body"> {{ content }} </section>
 </article>
