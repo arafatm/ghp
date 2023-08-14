@@ -42,6 +42,7 @@ a:not([href])  { color: var(--c1); }
 a>img  {border: 2px solid blue;}
 blockquote  { border-left: 0.2rem solid var(--c1); margin: 0rem; padding: 0.5rem; color: var(--c1)}
 blockquote p  { margin: 0; padding: 0;}
+blockquote p:before  { content: '> '; font-size: 1.5rem; vertical-align: middle; }
 code  { font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace; font-weight: bold; color: var(--c1);  }
 details  { border: 0.1rem solid var(--c1); border-radius: 1rem; margin: 1rem; padding: 0.5rem; }
 em  { background-color: wheat; padding: 0.1rem 0.3rem; font-style: normal; }
