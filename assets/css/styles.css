@@ -52,6 +52,8 @@ input.task-list-item-checkbox  { margin-right: 0.5rem}
 li ul { margin: 0; }
 p  { margin-bottom: 0;}
 p code { background-color: #EDEDED; padding: 0 0.7rem; border-radius: 0.5rem; }
+li > pre > code { background-color: #EDEDED; border-radius: 1rem; padding: 0 1rem; }
+section > pre > code { background-color: #EDEDED; border-radius: 1rem; padding: 0 1rem; }
 pre { padding: 0.5rem; }
 pre.highlight code { padding: 0; color: white;}
 section  { padding: 0.5rem 0 1rem 0; /*! border-bottom: 1px solid black; */}
