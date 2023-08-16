@@ -27,23 +27,18 @@ jobs:
 
       - name: copy GHP configs
         run: | 
-          echo "--- Current hash: $(git rev-parse HEAD)"
+          echo "* Current hash: $(git rev-parse HEAD)"
           if [[ "$(basename $(pwd))" != "ghp" ]]; then
             git config user.name 'github'
             git config user.email 'noreply@github.com'
-            echo "base_pwd: $(basename $(pwd))"
-            rm -rf ghp 
+            echo '* Building $(basename $(pwd)) with ghp.yml'
+
+            if [[ -n $(git status --short) ]]; then echo "*** Updated ghp"; fi
+
             wget https://github.com/arafatm/ghp/tarball/main -O - | tar -xz --one-top-level=ghp --strip-components=1;
-            ghpArr=( "Gemfile" "_config.yml" "_includes" "_layouts" "favicon.ico" )
-            for item in ${ghpArr[@]}; do 
-              rm -rf $item
-              cp -r ghp/$item .
-              echo "deleted and copied $item"
-            done
-            if [[ -n $(git status --short) ]]; then
-              echo "--- Updated ghp"
-            fi
-            echo "--- Updated hash: $(git rev-parse HEAD)"
+            ghpArr=( "Gemfile" "_config.yml" "favicon.ico" "_includes" "_layouts" )
+            for item in ${ghpArr[@]}; do cp -ruf ghp/$item . && echo "* copied $item"; done
+            rm -rf ghp && echo "* rm -rf ghp \n"
           fi
 
       - name: Setup Pages
