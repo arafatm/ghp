@@ -55,7 +55,7 @@ pre.highlight code { padding: 0; color: white;}
 section  { padding: 0.5rem 0 1rem 0; /*! border-bottom: 1px solid black; */}
 section.header  { margin-bottom: 1rem; padding: 0.5rem; border: 1px solid black; border-radius: 1rem;}
 strong  { background-color: pink; padding: 0.1rem 0.3rem; font-weight: bolder; }
-table  { border-collapse: collapse; }
+table  { border-collapse: collapse; margin: 1rem auto; }
 td  { border: 1px solid black; padding: 0.5rem; vertical-align: top;  }
 ul  { margin: 0; padding: 0 1rem;}
 
