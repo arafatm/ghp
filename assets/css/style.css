@@ -1,6 +1,4 @@
-:root {
-  --c1: #525559;
-}
+:root { --c1: #525559; }
 html  { background-color: darkgrey; }
 header  {}
 body  { font: 14px "fira sans", sans-serif; max-width: 60rem; background-color: white; margin: 0rem auto; padding: 0 1rem; border: 2px solid silver; line-height: 1.4rem; }
@@ -42,7 +40,7 @@ a>img  {border: 2px solid blue;}
 blockquote  { margin: 0rem; padding: 0.5rem; }
 blockquote p  { margin: 0; padding: 0;}
 blockquote p:before  { content: '> '; font-size: 1.5rem; vertical-align: middle; }
-code  { font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace; font-weight: bold; color: var(--c1);  }
+code  { font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace; font-weight: bold; color: #F11; }
 details  { border: 0.1rem solid var(--c1); border-radius: 1rem; margin: 1rem; padding: 0.5rem; }
 em  { background-color: wheat; padding: 0.1rem 0.3rem; font-style: normal; }
 img  { margin: 0; padding: 0.5rem; max-height: 20rem; max-width: 100%; }
@@ -50,10 +48,9 @@ img.emoji, img.ico  { vertical-align: middle; width: 1.3rem; height: 1.3rem; pad
 input.task-list-item-checkbox  { margin-right: 0.5rem}
 li ul { margin: 0; }
 p  { margin-bottom: 0;}
-p > code { background-color: #EDEDED; padding: 0 0.7rem; border-radius: 0.5rem; }
-li > code { background-color: #EDEDED; border-radius: 1rem; padding: 0 1rem; }
-section > pre > code { background-color: #EDEDED; border-radius: 1rem; }
-pre { padding: 0.5rem; background-color: #EDEDED; border-radius: 1rem; }
+p > code { padding: 0 0.5rem; }
+li > code { padding: 0 }
+pre { padding: 0.5rem; }
 pre.highlight code { padding: 0; color: white;}
 section  { padding: 0.5rem 0 1rem 0; /*! border-bottom: 1px solid black; */}
 section.header  { margin-bottom: 1rem; padding: 0.5rem; border: 1px solid black; border-radius: 1rem;}
