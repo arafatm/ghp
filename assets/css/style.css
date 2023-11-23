@@ -47,6 +47,7 @@ img.emoji, img.ico  { vertical-align: text-bottom; width: 1.3rem; height: 1.3rem
 input.task-list-item-checkbox  { margin-right: 0.5rem}
 li ul { margin: 0; }
 p  { margin-bottom: 0;}
+p>img {margin-left: 5rem;}
 p > code { padding: 0 0.5rem; }
 li > code { padding: 0 }
 pre { padding: 0.5rem; }
