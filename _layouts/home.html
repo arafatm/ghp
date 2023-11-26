@@ -12,21 +12,24 @@ layout: default
   </section>
 {% endif %}
 
+<!-- TOC -->
 <nav class="toc">{% include toc.html html=content h_min=2 h_max=3 class="nav" %} </nav>
 
+<!-- Articles by Category -->
+{% comment %} 
 <article>
   <section class="body"> {{ content }} </section>
-
+  {% comment %} {% endocmment %}
   {%- assign categories =  site.articles | map: 'categories' | 
   join: ','  | split: ',' | uniq | sort -%}
-
+  {% comment %} {% endocmment %}
   <nav><ul>
       {%- for cat in categories -%}
       <li><a href="#misc">{{ cat }}</a></li>
       {%- endfor -%}
     </ul>
   </nav>
-
+  {% comment %} {% endocmment %}
   {%- for cat in categories -%}
   <h2><a id="{{cat}}">{{ cat }}</a></h2>
   <ul style="white-space: nowrap">
@@ -43,7 +46,7 @@ layout: default
     {%- endfor -%}
   </ul>
   {%- endfor -%}
-
+  {% comment %} {% endocmment %}
   {% for category in site.articles.categories %}
     <h3>{{ category[0] }}</h3>
     <ul>
@@ -52,7 +55,7 @@ layout: default
       {% endfor %}
     </ul>
   {% endfor %}
-
+  {% comment %} {% endocmment %}
   {%- if site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
   <ul class="post-list">
@@ -75,9 +78,10 @@ layout: default
     </li>
     {%- endfor -%}
   </ul>
-
+  {% comment %} {% endocmment %}
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
-
+  {% comment %} {% endocmment %}
 </article>
+endcomment %}
 <!-- vim: set ft=liquid: -->
