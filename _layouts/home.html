@@ -15,8 +15,6 @@ layout: default
 <!-- TOC -->
 <nav class="toc">{% include toc.html html=content h_min=2 h_max=3 class="nav" %} </nav>
 
-{{ content }}
-
 <!-- Articles by Category -->
 <article>
   <section class="body"> {{ content }} </section>
@@ -24,7 +22,7 @@ layout: default
   join: ','  | split: ',' | uniq | sort -%}
   <nav><ul>
       {%- for cat in categories -%}
-      <li><a href="#misc">{{ cat }}</a></li>
+      <li><a href="#{{ cat }}">{{ cat }}</a></li>
       {%- endfor -%}
     </ul>
   </nav>
@@ -52,6 +50,10 @@ layout: default
       {% endfor %}
     </ul>
   {% endfor %}
+</article>
+
+<!-- Posts -->
+<article>
   {%- if site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
   <ul class="post-list">
