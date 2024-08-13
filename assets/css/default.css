@@ -1,3 +1,5 @@
+@import "/ghp/assets/css/rouge.css";
+
 :root { --c1: #525559; }
 html  { background-color: white; }
 body  { font: 14px "fira sans", sans-serif; max-width: 60rem; background-color: white; margin: 0rem auto; padding: 0 1rem; line-height: 1.4rem; }
