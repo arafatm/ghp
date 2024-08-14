@@ -1,7 +1,7 @@
 @import "/ghp/assets/css/rouge.css";
 
 :root { --c1: #525559; }
-html  { background-color: white; }
+html  { background-color: gray; }
 body  { font: 14px "fira sans", sans-serif; max-width: 60rem; background-color: white; margin: 0rem auto; padding: 0 1rem; line-height: 1.4rem; }
 footer  { display: flex; justify-content: space-between; margin: 1rem; padding: 0.5rem 3rem; text-align: center;}
 
@@ -38,17 +38,17 @@ h6::before { padding-right: 0.5rem;}
 a  { text-decoration: underline; color: darkblue; }
 a:not([href])  { color: var(--c1); }
 a>img  {border: 2px solid blue;}
-blockquote  { margin: 0rem; padding: 0.5rem; }
+blockquote  { margin: 0rem; padding: 0.5rem; font-weight: 900; color: mediumvioletred}
 blockquote p  { margin: 0; padding: 0;}
 blockquote p:before  { content: '> '; font-size: 1.5rem; vertical-align: middle; }
 code  { font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace; font-weight: bold; color: #F11; }
 details  { border: 0.1rem solid var(--c1); border-radius: 1rem; margin: 1rem; padding: 0.5rem; }
 em  { background-color: wheat; padding: 0.1rem 0.3rem; font-style: normal; }
-img  { max-width:90%; margin: auto; padding: 0.5rem; }
+img  { max-width:90%; margin: auto; padding: 0 2rem; background-color: gray; max-height: 20rem }
 img.emoji, img.ico  { vertical-align: text-bottom; width: 1.3rem; height: 1.3rem; padding: 0rem; }
 input.task-list-item-checkbox  { margin-right: 0.5rem}
 li ul { margin: 0; }
-p  { margin-bottom: 0;}
+p  { margin-top: 2rem;}
 p > code { padding: 0 0.5rem; }
 li > code { padding: 0 }
 pre { padding: 0.5rem; }
