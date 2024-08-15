@@ -7,7 +7,7 @@ title: arafatm template
 - `gh api --paginate /users/arafatm/repos | jq '.[] | select(.has_pages == true) | .name'`
 - Create repo & `ggit_arafatm; ggit_pages`
 
-## Useful Links
+# Useful Links
 
 - [CloudCannon Academy - Advanced navigation](https://learn.cloudcannon.com/jekyll/advanced-navigation/)
 - [CloudCannon Academy - List posts by category](https://learn.cloudcannon.com/jekyll/list-posts-by-category/)
@@ -16,29 +16,31 @@ title: arafatm template
 - [GH Workflows: add-commit](https://github.com/marketplace/actions/add-commit)
 - [Theme: Lanyon](https://lanyon.getpoole.com/)
 
-## Syntax
+# Syntax
 
+## Text
+
+### Block
     Block Text
-
-<details><summary>:bulb: Testing Code</summary>
-
-```ruby
-world = "world"
-puts "Hello #{world}"
-```
-
-Color `#0969DA`
-</details>
-
-```ruby
-world = "world"
-puts "Hello #{world}"
-```
 
 > Multiline Quote :cry: <newline>
 > :bulb: :bulb: :knot:
 
+#### Details
+<details><summary>:bulb: Testing Code</summary></details>
+
+#### Code
+```ruby
+world = "world"
+puts "Hello #{world}"
+```
+
+#### Color
+Color `#0969DA`
+
+#### Emoji
 :bulb:
+
 
 This is some random text **This is bold text** _This text is italicized_ ~~This
 was mistaken text~~ This is some random text **This is bold text** _This text
@@ -49,9 +51,13 @@ italicized_ ~~This was mistaken text~~ This is some random text **This is bold
 text** _This text is italicized_ ~~This was mistaken text~~ This is some random
 text **This is bold text** _This text is italicized_ ~~This was mistaken text~~
 
+### Tasks
+
 - [ ] task A
 - [ ] :a: task B
 - [ ] :b: task C
+
+### Images
 
 ![](https://images.unsplash.com/photo-1493612276216-ee3925520721)
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTM4eGtoNmlzcWZ3OGZyeXE3aDJqd2N3cjBia2owcTQ1bHZmaXh4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZaEUSTAoWGQDhJumTu/giphy.gif)
@@ -59,10 +65,13 @@ text **This is bold text** _This text is italicized_ ~~This was mistaken text~~
 ![](https://media.giphy.com/media/kSbETPzWRAtMEdszqc/giphy.gif) 
 Followed by some text Followed by some text on next line 
 
+#### Images w/ text
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTM4eGtoNmlzcWZ3OGZyeXE3aDJqd2N3cjBia2owcTQ1bHZmaXh4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZaEUSTAoWGQDhJumTu/giphy.gif)
 - followed by bullets
 
-
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTM4eGtoNmlzcWZ3OGZyeXE3aDJqd2N3cjBia2owcTQ1bHZmaXh4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZaEUSTAoWGQDhJumTu/giphy.gif)
+followed by paragraph
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTM4eGtoNmlzcWZ3OGZyeXE3aDJqd2N3cjBia2owcTQ1bHZmaXh4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZaEUSTAoWGQDhJumTu/giphy.gif) 
 ### Math
 
 - [Using MathJax](https://codepen.io/josdea/pen/rLOJxL)
