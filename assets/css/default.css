@@ -5,8 +5,9 @@
     --background-color: #212a2e;
     --text-color: goldenrod;
     --link-color: #828fff; 
+    --bq-color: salmon;
     --em-color: yellow; 
-    --strong-color: #000;
+    --strong-color: salmon;
     --pop-color: #334;
     --code-color: #FFF;
     --header-color: orange; }
@@ -22,9 +23,9 @@ body  {
 a {color: var(--link-color)}
 code, span.MathJax  { font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace;  color: white; font-size: 1rem; }
 div.MathJax_Display {color: var(--code-color); background-color: var(--pop-color);  text-align: left; padding: 1rem; margin: 1rem;}
-strong { background-color: var(--text-color); color: var(--strong-color); padding: 0rem 0.5rem; font-weight: 600 }
+strong { background-color: var(--strong-color); color: var(--pop-color); padding: 0rem 0.5rem; font-weight: 600 }
 em {color: var(--em-color);}
-blockquote {background-color: #334; color: var(--em-color); font-weight: normal; margin: 1rem; padding: 1rem;}
+blockquote {background-color: #334; color: var(--bq-color); font-weight: normal; margin: 1rem; padding: 1rem;}
 blockquote>p{margin: 0;}
 img {max-height: 20rem;  max-width: 100%; }
 img.emoji {padding: 0rem 0.1rem;}
