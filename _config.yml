@@ -14,6 +14,8 @@ plugins:
   - jekyll-redirect-from
   - jekyll-titles-from-headings
   - jemoji
+  - jekyll-wikirefs
+
 
 readme_index:
   enabled:          true
