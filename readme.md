@@ -3,6 +3,8 @@ layout: home
 title: arafatm template
 ---
 
+Wikilinks [[test]]
+
 - `gh workflow run jekyll-gh-pages.yml`
 - `gh api --paginate /users/arafatm/repos | jq '.[] | select(.has_pages == true) | .name'`
 - Create repo & `ggit_arafatm; ggit_pages`
