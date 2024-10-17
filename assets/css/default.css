@@ -1,4 +1,6 @@
+/*
 @import "/ghp/assets/css/rouge.css";
+
 
 :root { 
     --c1: #525559;     
@@ -130,9 +132,6 @@ strong  { background-color: pink; padding: 0.1rem 0.3rem; font-weight: bolder; }
 
 div.nowrap td {text-wrap: nowrap}
 
-
-
-/*
 @media (max-width: 1200px)  { img  { width: 32%; } }
 @media (max-width: 800px)  { img  { width: 48%; } }
 @media (max-width: 500px)  { img  { width: 100%; } }
