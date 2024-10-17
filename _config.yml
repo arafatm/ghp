@@ -14,6 +14,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-titles-from-headings
   - jemoji
+  - jekyll-remote-theme # Support leap-day theme
   - jekyll-wikirefs
 
 
@@ -51,3 +52,4 @@ exclude:
 
 # theme: jekyll-theme-hacker
 #theme: minima
+remote_theme: pages-themes/leap-day@v0.2.0
