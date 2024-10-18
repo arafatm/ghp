@@ -15,7 +15,7 @@ plugins:
   - jekyll-titles-from-headings
   - jemoji
   - jekyll-remote-theme # Support leap-day theme
-  - jekyll-wikirefs
+# - jekyll-wikirefs # Not supported by GHP https://pages.github.com/versions/
 
 
 readme_index:
