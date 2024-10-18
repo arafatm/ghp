@@ -1,8 +1,3 @@
----
-layout: home
-title: arafatm template
----
-
 Wikilinks [[test]]
 
 - `gh workflow run jekyll-gh-pages.yml`
