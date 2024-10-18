@@ -17,7 +17,6 @@ plugins:
   - jekyll-remote-theme # Support leap-day theme
 # - jekyll-wikirefs # Not supported by GHP https://pages.github.com/versions/
 
-theme: jekyl-theme-leap-day # https://github.com/pages-themes/leap-day
 
 readme_index:
   enabled:          true
@@ -53,3 +52,4 @@ exclude:
 
 # theme: jekyll-theme-hacker
 #theme: minima
+theme: jekyl-theme-leap-day
