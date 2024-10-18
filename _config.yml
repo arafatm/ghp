@@ -37,18 +37,15 @@ remote_theme: pages-themes/leap-day@v0.2.0 # https://github.com/pages-themes/lea
 #   articles:
 #     output: true
 #     permalink: /:categories/:name
-# 
-# # Exclude from processing.
-# # The following items will not be processed, by default. Create a custom list
-# # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-# 
-# # theme: jekyll-theme-hacker
-# #theme: minima
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
