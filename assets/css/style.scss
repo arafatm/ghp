@@ -33,5 +33,6 @@ h4::before {content: '#### '; font-size: 0.2em;}
 h5::before {content: '##### '; font-size: 0.2em;}
 h6::before {content: '###### '; font-size: 0.2em;}
 
-blockquote, strong {color: goldenrod;}
-em {color: palegoldenrod;}
+blockquote, strong { color: goldenrod; }
+em { color: palegoldenrod; }
+code { color: #90a959; }
