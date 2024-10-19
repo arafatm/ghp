@@ -12,9 +12,9 @@ nav {
     text-align: right;
     bottom: 0;
     overflow-y: auto;
-    li.tag-h1 a { color: #FFF;}
-    li.tag-h2 a { color: #AAA;}
-    li.tag-h3 a { color: #666;}
+    ul li.tag-h1 a { color: #FFF;}
+    ul li.tag-h2 a { color: #AAA;}
+    ul li.tag-h3 a { color: #666;}
 }
 
 h1,h2,h3,h4,h5,h6 {color: steelblue; }
