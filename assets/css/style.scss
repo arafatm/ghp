@@ -6,26 +6,23 @@
 header { margin: 0; padding: 0; }
 
 body {background: 0; background-color: #222;}
-section {width: 60em; border: 0; box-shadow: none; background-color: #333; color: #FFF;}
+section {width: 60em; border: 0; box-shadow: none; background-color: #333; color: #FFF; padding: 1em;}
 
 nav {
     text-align: right;
     bottom: 0;
     overflow-y: auto;
-    ul li.tag-h1 { 
-      border-bottom: 1px solid steelblue; 
-      a { color: #FFF;}
-    } 
-    ul li.tag-h2 {
-      text-decoration: underline; 
-      a { color: #AAA;}
-    }
-    ul li.tag-h3 a { color: #666;}
+
+    ul li a { color: white; }
+    ul li.tag-h1 { background-color: #33334A; }
+    ul li.tag-h2 { border-bottom: 1px solid steelblue; }
+    ul li.tag-h3 a { text-decoration: underline; }
 }
 
-h1,h2,h3,h4,h5,h6 {color: steelblue; }
-h1 { border-bottom: 1px solid steelblue; } 
-h2 {text-decoration: underline; }
+h1,h2,h3,h4,h5,h6 {color: #66F; }
+h1 { background-color: #44A; }
+h2 { border-bottom: 1px solid steelblue; } 
+h3 {text-decoration: underline; }
 h1::before {content: '# '; font-size: 0.2em;}
 h2::before {content: '## '; font-size: 0.2em;}
 h3::before {content: '### '; font-size: 0.2em;}
@@ -36,4 +33,4 @@ h6::before {content: '###### '; font-size: 0.2em;}
 blockquote { color: palegoldenrod; } 
 strong { color: orange; }
 em { color: goldenrod; }
-code { color: #90a959; }
+code.language-plaintext { color: #90a959; }
