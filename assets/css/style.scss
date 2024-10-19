@@ -4,11 +4,26 @@
 @import "{{ site.theme }}";
 
 header { margin: 0; padding: 0;
-nav {
-  text-align: left;
-  bottom: 0;
-  overflow-y: auto;
 
-  ul>li.tag-h3::before {content:'. '}
+body {background-color: #222;}
+section {background-color: #333; color: #FFF}
+
+nav {
+    text-align: right;
+    bottom: 0;
+    overflow-y: auto
+    li.tag-h1 a { color: #FFF;}
+    li.tag-h2 a { color: #AAA;}
+    li.tag-h3 a { color: #666;}
 }
 
+h1,h2,h3,h4,h5,h6 {color: steelblue; }
+h1::before {content: '# '; font-size: 0.2em;}
+h2::before {content: '## '; font-size: 0.2em;}
+h3::before {content: '### '; font-size: 0.2em;}
+h4::before {content: '#### '; font-size: 0.2em;}
+h5::before {content: '##### '; font-size: 0.2em;}
+h6::before {content: '###### '; font-size: 0.2em;}
+
+blockquote, strong {color: goldenrod}
+em {color: palegoldenrod}
