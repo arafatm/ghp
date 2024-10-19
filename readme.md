@@ -18,7 +18,7 @@ Wikilinks [[test]]
 ## Text
 
 ### Block
-    Block Text
+    Block Text Block Text Block Text Block Text Block Text Block Text Block Text Block Text Block Text Block Text Block Text Block Text Block Text Block Text Block Text Block Text Block Text Block Text
 
 > Multiline Quote :cry: <newline>
 > :bulb: :bulb: :knot:
@@ -100,7 +100,7 @@ i = 56;
 puts "test #{i}"
 ```
 
-## Heading 2
+## Long Long Long Long Long Long Long Heading 2
 ### Heading 3
 text
 - followed by list
