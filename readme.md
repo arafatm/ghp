@@ -25,7 +25,7 @@ Lorem Ipsum is simply __bold dummy text__ of the _printing and typesetting_ indu
 > Multiline Quote :cry: <newline>
 > :bulb: :bulb: :knot:
 
-> Multiline Quote Multiline Quote Multiline Quote Multiline Quote Multiline Quote Multiline Quote Multiline Quote Multiline Quote 
+> Multiline `code` Quote __strong__ Multiline _em_ Quote Multiline Quote Multiline Quote Multiline Quote Multiline Quote Multiline Quote Multiline Quote 
 
 #### Details
 <details><summary>:bulb: Testing Code</summary></details>
