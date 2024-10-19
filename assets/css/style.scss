@@ -3,29 +3,33 @@
 
 @import "{{ site.theme }}";
 
-header { margin: 0; padding: 0; }
+header { margin: 0; padding: 0; min-height: 0;}
 
 body {background: 0; background-color: #222;}
 section {
   width: 60em;
+  margin: 5em 0 0 0;
   border: 0;
   box-shadow: none;
   background-color: #333;
   color: #FFF;
-  padding: 1em;
+  padding: 1ex;
 }
 
 
 nav {
-    text-align: right;
-    bottom: 0;
-    overflow-y: auto;
+  padding-right: 1em;
+  text-align: right;
+  bottom: 0;
+  overflow-y: auto;
+  top: 5em;
 
-    ul li a { color: white; }
-    ul li.tag-h1 { background-color: #33334A; }
-    ul li.tag-h2 { border-bottom: 1px solid steelblue; }
-    ul li.tag-h3 a { text-decoration: underline; }
+  ul li a { color: white; }
+  ul li.tag-h1 { background-color: #33334A; }
+  ul li.tag-h2 { border-bottom: 1px solid steelblue; }
+  ul li.tag-h3 a { text-decoration: underline; }
 }
+nav ul li.active::after { content: ' >>'; color: red;}
 
 h1,h2,h3,h4,h5,h6 {color: royalblue; }
 section > h1 { background-color: #44A; color: white; padding: 0.5ex; }
