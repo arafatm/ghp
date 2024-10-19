@@ -8,3 +8,5 @@ nav {
   bottom: 0;
   overflow-y: auto;
 }
+
+nav>ul>li.tag-h3::before {content:'. '}
