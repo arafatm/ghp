@@ -36,6 +36,17 @@ world = "world"
 puts "Hello #{world}"
 ```
 
+#### Math
+
+This is $x = 2$ inline math
+- $x = 2$
+- $x = 2$
+
+$$
+x = 2
+2 * x = 4
+$$
+
 #### Color
 Color `#0969DA`
 
