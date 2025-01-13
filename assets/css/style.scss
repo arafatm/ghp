@@ -1,12 +1,17 @@
----
----
-
-@import "{{ site.theme }}";
+--- --- @import "{{ site.theme }}";
 /* @import url("https://unpkg.com/simpledotcss/simple.min.css"); */
 
-header { margin: 0; padding: 0; min-height: 0;}
+header {
+  margin: 0;
+  padding: 0;
+  min-height: 0;
+}
 
-body {background: 0; background-color: #222;}
+body {
+  background: 0;
+  background-color: #222;
+}
+
 section {
   width: 60em;
   margin: 5em 0 0 0;
@@ -25,25 +30,93 @@ nav {
   overflow-y: auto;
   top: 5em;
 
-  ul li a { color: white; }
-  ul li.tag-h1 { background-color: #33334A; }
-  ul li.tag-h2 { border-bottom: 1px solid steelblue; }
-  ul li.tag-h3 a { text-decoration: underline; }
+  ul li a {
+    color: white;
+  }
+
+  ul li.tag-h1 {
+    background-color: #33334A;
+  }
+
+  ul li.tag-h2 {
+    border-bottom: 1px solid steelblue;
+  }
+
+  ul li.tag-h3 a {
+    text-decoration: underline;
+  }
 }
-nav ul li.active::after { content: ' >>'; color: red;}
 
-h1,h2,h3,h4,h5,h6 {color: royalblue; }
-section > h1 { background-color: #44A; color: white; padding: 0.5ex; }
-h2 { border-bottom: 2px solid royalblue; } 
-h3 {text-decoration: underline; }
-h1::before {content: '# '; font-size: 0.2em;}
-h2::before {content: '## '; font-size: 0.2em;}
-h3::before {content: '### '; font-size: 0.2em;}
-h4::before {content: '#### '; font-size: 0.2em;}
-h5::before {content: '##### '; font-size: 0.2em;}
-h6::before {content: '###### '; font-size: 0.2em;}
+nav ul li.active::after {
+  content: ' >>';
+  color: red;
+}
 
-blockquote { color: palegoldenrod; } 
-strong { color: orange; }
-em { color: goldenrod; }
-code.language-plaintext { color: #90a959; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: royalblue;
+}
+
+section>h1 {
+  background-color: #44A;
+  color: white;
+  padding: 0.5ex;
+}
+
+h2 {
+  border-bottom: 2px solid royalblue;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+h1::before {
+  content: '# ';
+  font-size: 0.2em;
+}
+
+h2::before {
+  content: '## ';
+  font-size: 0.2em;
+}
+
+h3::before {
+  content: '### ';
+  font-size: 0.2em;
+}
+
+h4::before {
+  content: '#### ';
+  font-size: 0.2em;
+}
+
+h5::before {
+  content: '##### ';
+  font-size: 0.2em;
+}
+
+h6::before {
+  content: '###### ';
+  font-size: 0.2em;
+}
+
+blockquote {
+  color: palegoldenrod;
+}
+
+strong {
+  color: orange;
+}
+
+em {
+  color: goldenrod;
+}
+
+code.language-plaintext {
+  color: red;
+}
