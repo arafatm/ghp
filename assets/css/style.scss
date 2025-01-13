@@ -1,15 +1,15 @@
---- --- @import "{{ site.theme }}";
+@import "{{ site.theme }}";
 /* @import url("https://unpkg.com/simpledotcss/simple.min.css"); */
 
 header {
   margin: 0;
   padding: 0;
-  min-height: 0;
+  min-height: 0
 }
 
 body {
   background: 0;
-  background-color: #222;
+  background-color: #222
 }
 
 section {
@@ -19,37 +19,36 @@ section {
   box-shadow: none;
   background-color: #333;
   color: #FFF;
-  padding: 1ex;
+  padding: 1ex
 }
-
 
 nav {
   padding-right: 1em;
   text-align: right;
   bottom: 0;
   overflow-y: auto;
-  top: 5em;
+  top: 5em
+}
 
-  ul li a {
-    color: white;
-  }
+nav ul li a {
+  color: white
+}
 
-  ul li.tag-h1 {
-    background-color: #33334A;
-  }
+nav ul li.tag-h1 {
+  background-color: #33334A
+}
 
-  ul li.tag-h2 {
-    border-bottom: 1px solid steelblue;
-  }
+nav ul li.tag-h2 {
+  border-bottom: 1px solid steelblue
+}
 
-  ul li.tag-h3 a {
-    text-decoration: underline;
-  }
+nav ul li.tag-h3 a {
+  text-decoration: underline
 }
 
 nav ul li.active::after {
   content: ' >>';
-  color: red;
+  color: red
 }
 
 h1,
@@ -58,65 +57,68 @@ h3,
 h4,
 h5,
 h6 {
-  color: royalblue;
+  color: #CAC;
 }
 
 section>h1 {
-  background-color: #44A;
+  background-color: #535;
   color: white;
-  padding: 0.5ex;
+  padding: 0.5ex
 }
 
 h2 {
-  border-bottom: 2px solid royalblue;
+  border-bottom: 2px solid #CAC
 }
 
 h3 {
-  text-decoration: underline;
+  text-decoration: underline
 }
 
 h1::before {
   content: '# ';
-  font-size: 0.2em;
+  font-size: 0.2em
 }
 
 h2::before {
   content: '## ';
-  font-size: 0.2em;
+  font-size: 0.2em
 }
 
 h3::before {
   content: '### ';
-  font-size: 0.2em;
+  font-size: 0.2em
 }
 
 h4::before {
   content: '#### ';
-  font-size: 0.2em;
+  font-size: 0.2em
 }
 
 h5::before {
   content: '##### ';
-  font-size: 0.2em;
+  font-size: 0.2em
 }
 
 h6::before {
   content: '###### ';
-  font-size: 0.2em;
+  font-size: 0.2em
 }
 
 blockquote {
   color: palegoldenrod;
+  background-color: #323;
+  margin: 1ex 1ex;
+  padding: 2ex;
 }
 
 strong {
-  color: orange;
+  color: gold
 }
 
 em {
-  color: goldenrod;
+  color: gold;
 }
 
 code.language-plaintext {
-  color: red;
+  color: orangered;
 }
