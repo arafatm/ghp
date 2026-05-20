@@ -45,8 +45,8 @@ exclude:
 #     values:
 #       image: true
 # 
-# collections:
-#   articles:
-#     output: true
-#     permalink: /:categories/:name
+collections:
+  articles:
+    output: true
+    permalink: /:categories/:name
 
